@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buildify — web and mobile app ideas</title>
+<meta name="description" content="Pull the lever for a full-stack web or mobile app idea, with a starter plan and a stack. A new app idea every day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-track="apps" data-src="data/apps.json">
+
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="logo" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 2.5v19M2.5 12h19M6.6 6.6l10.8 10.8M17.4 6.6 6.6 17.4"/></svg>
+      buildify
+    </a>
+    <nav class="nav-links" aria-label="Pages">
+      <a href="index.html">Home</a>
+      <a href="cli.html">CLI projects</a>
+      <a href="apps.html" class="active" aria-current="page">Web &amp; mobile apps</a>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" id="soundBtn" aria-label="Mute sounds" aria-pressed="false"></button>
+      <button class="btn js-pull">Pull the Lever <span aria-hidden="true">→</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="wrap hero">
+  <div class="hero-copy">
+    <div class="doodle">Real users.<br>Real feedback.<br>Ship an app.
+      <svg class="doodle-arrow" viewBox="0 0 44 54" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5c20-1 33 12 27 38"/><path d="M23.5 37.5 30 44.5l5-8"/></svg>
+    </div>
+    <h1 class="headline tight"><span class="l1">Build an app</span><span class="l2">people keep.</span></h1>
+    <p class="lede">Pull the lever for a full-stack web or mobile app: what it is, who it's for, and the twist that makes it different. Each one comes with a starter plan and a stack.</p>
+    <button class="btn btn-lg js-pull">Pull the Lever <span aria-hidden="true">→</span></button>
+    <a class="today-link" href="#today"><span class="spark" aria-hidden="true">✦</span><span id="heroTodayLabel">Today's idea:</span><b id="heroTodayTitle"></b></a>
+  </div>
+
+  <div class="hero-machine">
+    <div class="machine-stage">
+      <div class="machine" id="machine">
+        <div class="m-ground"></div>
+        <i class="m-foot l"></i><i class="m-foot r"></i>
+
+        <svg class="m-shell" viewBox="0 0 420 378" aria-hidden="true">
+          <defs>
+            <linearGradient id="shellV" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#F9F7F2"/>
+              <stop offset=".45" stop-color="#EFEBE2"/>
+              <stop offset="1" stop-color="#E2DCCE"/>
+            </linearGradient>
+            <linearGradient id="shellH" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#6B5E45" stop-opacity=".10"/>
+              <stop offset=".035" stop-color="#FFFFFF" stop-opacity=".55"/>
+              <stop offset=".2" stop-color="#FFFFFF" stop-opacity="0"/>
+              <stop offset=".8" stop-color="#6B5E45" stop-opacity="0"/>
+              <stop offset=".965" stop-color="#6B5E45" stop-opacity=".08"/>
+              <stop offset="1" stop-color="#6B5E45" stop-opacity=".16"/>
+            </linearGradient>
+            <linearGradient id="hoodTint" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#FFFFFF" stop-opacity=".45"/>
+              <stop offset="1" stop-color="#8A7A58" stop-opacity=".07"/>
+            </linearGradient>
+            <linearGradient id="seamShade" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#6B5E45" stop-opacity="0"/>
+              <stop offset="1" stop-color="#6B5E45" stop-opacity=".12"/>
+            </linearGradient>
+            <clipPath id="shellClip">
+              <path d="M76 0H344C358 0 366.6 12.5 370 24L379 54Q382 64 391 64H393A27 27 0 0 1 420 91V351A27 27 0 0 1 393 378H27A27 27 0 0 1 0 351V91A27 27 0 0 1 27 64H29Q38 64 41 54L50 24C53.4 12.5 62 0 76 0Z"/>
+            </clipPath>
+          </defs>
+          <path d="M76 0H344C358 0 366.6 12.5 370 24L379 54Q382 64 391 64H393A27 27 0 0 1 420 91V351A27 27 0 0 1 393 378H27A27 27 0 0 1 0 351V91A27 27 0 0 1 27 64H29Q38 64 41 54L50 24C53.4 12.5 62 0 76 0Z" fill="url(#shellV)"/>
+          <g clip-path="url(#shellClip)">
+            <rect x="0" y="0" width="420" height="378" fill="url(#shellH)"/>
+            <rect x="0" y="0" width="420" height="64" fill="url(#hoodTint)"/>
+            <rect x="0" y="52" width="420" height="12" fill="url(#seamShade)"/>
+            <path d="M29 64.7H391" stroke="#FFFFFF" stroke-opacity=".9" stroke-width="1.4"/>
+            <path d="M76 0H344C358 0 366.6 12.5 370 24L379 54Q382 64 391 64H393A27 27 0 0 1 420 91V351A27 27 0 0 1 393 378H27A27 27 0 0 1 0 351V91A27 27 0 0 1 27 64H29Q38 64 41 54L50 24C53.4 12.5 62 0 76 0Z" fill="none" stroke="#FFFFFF" stroke-opacity=".95" stroke-width="3.2"/>
+          </g>
+          <path d="M76 0H344C358 0 366.6 12.5 370 24L379 54Q382 64 391 64H393A27 27 0 0 1 420 91V351A27 27 0 0 1 393 378H27A27 27 0 0 1 0 351V91A27 27 0 0 1 27 64H29Q38 64 41 54L50 24C53.4 12.5 62 0 76 0Z" fill="none" stroke="#9E957F" stroke-opacity=".45" stroke-width="1"/>
+        </svg>
+
+        <div class="m-hood-label"><span>IDEA MACHINE</span></div>
+
+        <div class="m-bezel">
+          <div class="m-window">
+            <div class="reel" id="reel0"><div class="strip"></div><div class="shade"></div></div>
+            <div class="reel" id="reel1"><div class="strip"></div><div class="shade"></div></div>
+            <div class="reel" id="reel2"><div class="strip"></div><div class="shade"></div></div>
+          </div>
+        </div>
+
+        <div class="m-base">
+          <svg class="m-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M12 1.5v21M1.5 12h21M7.2 7.2l9.6 9.6M16.8 7.2l-9.6 9.6"/></svg>
+          <span class="m-verdict" id="mVerdict"></span>
+        </div>
+
+        <div class="lv-hub"></div>
+        <div class="lv-collar"></div>
+        <div class="lv-rod" id="lvRod"></div>
+        <div class="lv-ball" id="lvBall"></div>
+        <div class="lv-note" aria-hidden="true">
+          <span>pull<br>it</span>
+          <svg viewBox="0 0 24 42" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3C6 10 5 26 12 38.5"/><path d="M10.4 4.4 16 3l-.8 5.6"/><path d="M7.4 34.4 12 38.8l2.9-5.6"/></svg>
+        </div>
+        <div class="lv-hit" id="lvHit" role="button" tabindex="0" aria-label="Pull the lever"></div>
+      </div>
+    </div>
+  </div>
+
+  <aside class="hero-side">
+    <div class="sticky">Your first ten<br>users can be<br>your friends.
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.2c1.9 2.2 5.1 2.2 7 0"/><path d="M9 9.6v.4M15 9.6v.4"/></svg>
+    </div>
+    <div class="recent">
+      <div class="recent-title"><i></i>RECENT IDEAS</div>
+      <ul id="recentList"></ul>
+    </div>
+  </aside>
+</section>
+
+<section class="wrap" id="features">
+  <div class="features">
+    <div class="feature">
+      <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M13.2 2.5 4.8 13.6h6.4l-1 7.9 8.5-11.3h-6.4l.9-7.7z"/></svg></span>
+      <div><h3>Random Ideas</h3><p>Never the same twice.</p></div>
+    </div>
+    <div class="feature">
+      <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="8.2" r="3.3"/><path d="M2.8 19.6c0-3.5 2.8-6 6.2-6s6.2 2.5 6.2 6M15.4 5.2a3.1 3.1 0 0 1 0 6M17.6 13.9c2.2.7 3.6 2.8 3.6 5.4"/></svg></span>
+      <div><h3>Unique Combinations</h3><p id="comboCount">Business × Audience × Twist</p></div>
+    </div>
+    <div class="feature">
+      <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3.5 8.5 8 12.4 12 5.5l4 6.9 4.5-3.9-1.8 10H5.3z"/><path d="M5.6 20.5h12.8"/></svg></span>
+      <div><h3>Build Challenges</h3><p>A build-ready idea every day.</p></div>
+    </div>
+    <div class="feature">
+      <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="5.8" r="2.6"/><circle cx="18" cy="18.2" r="2.6"/><path d="M8.3 10.8l7.4-3.8M8.3 13.2l7.4 3.8"/></svg></span>
+      <div><h3>Share &amp; Compare</h3><p>See what others build.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="idea">
+  <div class="idea" aria-live="polite">
+    <span class="idea-legend" id="ideaLegend">Example idea</span>
+    <div class="idea-col">
+      <span class="pill" id="ideaBadge"></span>
+      <p class="idea-sentence" id="ideaSentence"></p>
+      <button class="btn-ghost brief-btn" type="button" id="briefBtn">See the build brief</button>
+    </div>
+    <div class="idea-col">
+      <div class="money-head"><span class="plus">+</span>How to monetize it</div>
+      <ul class="money-list" id="moneyList"></ul>
+    </div>
+    <div class="idea-col idea-sketch" aria-hidden="true">
+      <svg viewBox="0 0 190 130" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="rotate(-14 42 70)">
+          <rect x="24" y="36" width="36" height="62" rx="7"/>
+          <rect x="29" y="44" width="26" height="42" rx="2"/>
+          <path d="M37 91.5h10"/>
+          <rect x="35" y="57" width="14" height="14" rx="3"/>
+          <path d="M42 67v-7M39 62.5l3-3 3 3"/>
+        </g>
+        <path d="M150 104c-18 18-54 16-76-4"/>
+        <path d="M75.5 110 73.6 99.4l10.4 1.7"/>
+      </svg>
+      <span class="sketch-note">Great<br>idea?<br>or<br>terrible?</span>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="today">
+  <div class="today">
+    <span class="idea-legend" id="tdLegend">Idea of the day</span>
+    <div class="today-main" id="tdMain">
+      <div class="today-meta"><span class="date-chip" id="tdDate"></span><span id="tdSource"></span></div>
+      <h2 class="today-title" id="tdTitle"></h2>
+      <p class="today-pitch" id="tdPitch"></p>
+      <div class="today-tags" id="tdTags"></div>
+      <div class="today-actions">
+        <button class="btn" type="button" id="tdCopy">Copy the build brief</button>
+        <a class="btn-ghost" id="suggestBtn" href="#">Suggest an idea</a>
+      </div>
+      <p class="status" id="tdStatus" role="status"></p>
+    </div>
+    <div class="today-brief" id="tdBrief">
+      <dl class="facts">
+        <div><dt>Problem</dt><dd id="tdProblem"></dd></div>
+        <div><dt id="tdWhoLabel">Who pays</dt><dd id="tdWho"></dd></div>
+        <div id="tdPricingRow"><dt>Pricing</dt><dd id="tdPricing"></dd></div>
+        <div id="tdStackRow"><dt>Stack</dt><dd id="tdStack"></dd></div>
+      </dl>
+      <div class="mvp-head" id="tdMvpHead">MVP</div>
+      <ol class="mvp" id="tdMvp"></ol>
+      <p class="first"><b>First 10 users:</b> <span id="tdFirst"></span></p>
+    </div>
+  </div>
+  <div class="archive" role="group" aria-label="Ideas from this week">
+    <span class="archive-label">This week</span>
+    <div class="archive-list" id="tdArchive"></div>
+  </div>
+  <p class="piece-note">Got an app type, user group or twist for the machine? <a id="pieceLink" href="#">Add a reel piece</a></p>
+</section>
+</main>
+
+<section class="bottom" id="about">
+  <svg class="waves" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="wGreen" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#D3E0C9"/><stop offset=".55" stop-color="#E3E9D9" stop-opacity=".6"/><stop offset="1" stop-color="#EFE9DD" stop-opacity="0"/></linearGradient>
+      <linearGradient id="wPeach" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#F3E6D6" stop-opacity="0"/><stop offset=".5" stop-color="#F3E1CC" stop-opacity=".55"/><stop offset="1" stop-color="#F0D6BA"/></linearGradient>
+    </defs>
+    <path d="M0 96C260 40 470 150 720 170S1160 210 1440 170V320H0Z" fill="url(#wGreen)"/>
+    <path d="M0 240C320 270 640 190 930 150S1300 90 1440 70V320H0Z" fill="url(#wPeach)"/>
+  </svg>
+  <div class="cta">
+    <div class="eyebrow">STILL THINKING?</div>
+    <h2>Just pull the lever.</h2>
+    <p>The next idea could be your biggest project yet.</p>
+    <button class="btn btn-lg js-pull">Pull the Lever <span aria-hidden="true">→</span></button>
+  </div>
+  <footer class="wrap foot">
+    <div class="foot-left"><span class="script-logo">Buildify</span><span class="foot-line"></span></div>
+    <div class="foot-tag"><span>BAD IDEAS BUILD<br>GREAT PEOPLE.</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3.5 8.5 8 12.4 12 5.5l4 6.9 4.5-3.9-1.8 10H5.3z"/><path d="M5.6 20.5h12.8"/></svg>
+    </div>
+  </footer>
+</section>
+
+<dialog class="brief-dialog" id="briefDialog" aria-labelledby="bdTitle">
+  <button class="bd-x" type="button" id="bdClose" aria-label="Close">×</button>
+  <div class="bd-kicker">Build brief</div>
+  <h3 class="bd-title" id="bdTitle"></h3>
+  <p class="bd-meta" id="bdMeta"></p>
+  <div id="bdBody"></div>
+  <div class="bd-actions"><button class="btn" type="button" id="bdCopy">Copy as Markdown</button><p class="status" id="bdStatus" role="status"></p></div>
+</dialog>
+
+<script type="application/json" id="buildify-data">{"version":1,"updated":"2026-09-24T00:00:00Z","config":{"repo":""},"page":{"reels":[{"label":"App","sub":"(what it is)","icon":"devices"},{"label":"Users","sub":"(for whom)","icon":"people"},{"label":"Twist","sub":"(the catch)","icon":"sparkle"}],"daily":"App of the day","noun":"app","who":"Who pays","example":["Expense splitter","Roommates","Works offline"],"stack":"Next.js with Supabase for a web app or PWA. If it's mobile-first, use Expo (React Native) on the same Supabase backend."},"reels":{"business":[{"text":"a habit tracker","short":"Habit tracker","tag":"health","w":0},{"text":"a shared to-do app","short":"Shared to-do app","tag":"productivity","w":1},{"text":"a peer-to-peer rental app","short":"Rental app","tag":"marketplace","w":1},{"text":"a group expense splitter","short":"Expense splitter","tag":"money","w":1},{"text":"a study buddy finder","short":"Study buddy finder","tag":"learning","w":1},{"text":"an event RSVP app","short":"Event RSVP app","tag":"community","w":1},{"text":"a link-in-bio page builder","short":"Link-in-bio builder","tag":"creator","w":0},{"text":"a photo-sharing app","short":"Photo-sharing app","tag":"social","w":-1},{"text":"a budget tracker","short":"Budget tracker","tag":"money","w":0},{"text":"a flashcards app","short":"Flashcards app","tag":"learning","w":0},{"text":"a neighborhood noticeboard","short":"Neighborhood board","tag":"community","w":0},{"text":"a meme-based social network","short":"Meme social network","tag":"social","w":-2}],"audience":[{"text":"for college students","short":"College students","money":{"t":"Campus sponsorships","n":"brands pay to reach students"},"firstUsers":"Launch in your own college's WhatsApp and Instagram groups.","w":1},{"text":"for new parents","short":"New parents","money":{"t":"Family plan","n":"both parents on one subscription"},"firstUsers":"Share it in local parent groups and prenatal classes.","w":1},{"text":"for roommates","short":"Roommates","money":{"t":"Flat plan","n":"one payment covers the flat"},"firstUsers":"Start with your own flat, then hostel and PG groups.","w":1},{"text":"for small gym owners","short":"Gym owners","money":{"t":"Per-location fee","n":"monthly"},"firstUsers":"Visit three gyms nearby and set it up for them for free.","w":0},{"text":"for pet owners","short":"Pet owners","money":{"t":"Pet-brand sponsors","n":"food and toy brands"},"firstUsers":"Put QR posters up at vet clinics and pet stores.","w":0},{"text":"for freelancers","short":"Freelancers","money":{"t":"Pro plan","n":"freelancers pay for time savers"},"firstUsers":"Share it in freelancer communities with a free template.","w":1},{"text":"for travelers","short":"Travelers","money":{"t":"Trip passes","n":"pay per trip, not monthly"},"firstUsers":"Post in backpacker groups and on hostel noticeboards.","w":0},{"text":"for local shop owners","short":"Shop owners","money":{"t":"Monthly fee","n":"per shop"},"firstUsers":"Walk into five shops near you with a demo on your phone.","w":0},{"text":"for runners","short":"Runners","money":{"t":"Club plans","n":"running clubs pay for members"},"firstUsers":"Join a weekend run club and bring it to their group chat.","w":0},{"text":"for teachers","short":"Teachers","money":{"t":"School license","n":"schools pay per teacher"},"firstUsers":"Ask one teacher you know to try it with a single class.","w":1},{"text":"for night owls","short":"Night owls","money":{"t":"Premium dark mode","n":"yes, really"},"firstUsers":"Post at 3 a.m. in the communities where they hang out.","w":-1},{"text":"for people who hate apps","short":"People who hate apps","money":{"t":"Good luck","n":"they won't download it"},"firstUsers":"Honestly, try a paper flyer.","w":-2}],"twist":[{"text":"with real-time collaboration","short":"Real-time collaboration","tag":"realtime","money":{"t":"Team plan","n":"pay per shared space"},"w":1},{"text":"that works fully offline","short":"Works offline","tag":"offline","money":{"t":"Pro sync","n":"paid cloud backup"},"w":1},{"text":"as a PWA with no app store","short":"PWA, no app store","tag":"pwa","money":{"t":"No store cut","n":"keep all of your payments"},"w":1},{"text":"with AI that fills in the boring parts","short":"AI does the boring parts","tag":"ai","money":{"t":"AI credits","n":"free quota, then paid"},"w":0},{"text":"with a WhatsApp bot instead of an app","short":"Lives in WhatsApp","tag":"whatsapp","money":{"t":"Per-message pricing","n":"pass on the bot costs"},"w":1},{"text":"that only opens once a day","short":"Opens once a day","tag":"once","money":{"t":"Extra opens","n":"pay to peek again"},"w":-1},{"text":"with a map at its heart","short":"Map-first","tag":"map","money":{"t":"Promoted pins","n":"local businesses pay"},"w":0},{"text":"with streaks and badges","short":"Streaks and badges","tag":"streaks","money":{"t":"Streak freezes","n":"pay to protect a streak"},"w":0},{"text":"that needs no sign-up","short":"No sign-up","tag":"nosignup","money":{"t":"Paid accounts","n":"sign up to keep things forever"},"w":1},{"text":"with voice notes instead of typing","short":"Voice notes only","tag":"voice","money":{"t":"Transcription minutes","n":"free allotment, then paid"},"w":0},{"text":"where every post costs one rupee","short":"₹1 per post","tag":"paypost","money":{"t":"Pay per post","n":"the twist is the business"},"w":-1},{"text":"that turns everything into a leaderboard","short":"All leaderboards","tag":"leaderboard","money":{"t":"League passes","n":"paid private leagues"},"w":-2}]},"money":{"byTag":{"productivity":[{"t":"Freemium","n":"paid teams and integrations"},{"t":"Pro plan","n":"a few dollars a month"}],"social":[{"t":"Premium profiles","n":"custom themes and badges"},{"t":"Ads","n":"only after real traction"}],"marketplace":[{"t":"Booking fee","n":"a cut of every rental"},{"t":"Protection add-on","n":"optional damage cover"}],"health":[{"t":"Premium insights","n":"small monthly fee"},{"t":"Coach plans","n":"coaches pay to follow clients"}],"learning":[{"t":"Freemium","n":"paid decks and stats"},{"t":"School licenses","n":"per class"}],"money":[{"t":"Pro features","n":"receipts, exports, multi-currency"},{"t":"Family plan","n":"one price for the household"}],"community":[{"t":"Ticket fee","n":"a small cut of paid tickets"},{"t":"Organizer plan","n":"branding and analytics"}],"creator":[{"t":"Pro page","n":"custom domain and analytics"},{"t":"Payments cut","n":"a small fee on tips and sales"}]}},"build":{"byTag":{"productivity":["Sign-in and one shared list with real-time sync","Push or email reminders","Offline-first so it works on the train"],"social":["Profiles, a feed and follows","Image upload with compression","Report and block from day one"],"marketplace":["Listings with photos, price and an availability calendar","Booking requests and in-app chat","Payments with a platform fee and deposits"],"health":["A one-tap daily check-in","Streaks and gentle reminders","A weekly progress chart"],"learning":["Create or import content","Spaced repetition or matching logic","Progress stats that bring people back"],"money":["Add an expense in under five seconds","Categories and a monthly summary","CSV export and privacy you can explain"],"community":["Event page with RSVP","Reminders and a waitlist","Organizer dashboard with headcount"],"creator":["A page builder with a few blocks","Link click analytics","Tips or payments via Stripe or Razorpay"]}},"daily":[{"id":"flat-grocery-list","title":"Shared grocery list for flatmates","pitch":"One live list for the whole flat, with who-bought-what and a quick split at month end.","problem":"Flatmates buy duplicates, forget essentials and argue about who paid.","whoPays":"Flatmates on a freemium plan; co-living operators for a branded version.","pricing":"Free for one flat; $2 per month for receipts and the monthly split.","mvp":["Real-time shared list","Tick items off and add prices","Monthly who-owes-what summary","Invite by link"],"firstUsers":"Use it in your own flat and two friends' flats, then post in hostel groups.","difficulty":1,"tags":["Mobile","Students"],"stack":"Expo (React Native) with Supabase for auth and real-time sync"},{"id":"study-room-finder","title":"Study room finder for campus","pitch":"See which classrooms and library rooms are free right now and book a slot for your group.","problem":"Students wander the campus looking for an empty room to study in together.","whoPays":"Colleges, as a campus license; free for students.","pricing":"$99 per month per campus.","mvp":["Import the timetable to know which rooms are free","Live list or map of free rooms","Group booking with QR check-in","Admin view for facilities staff"],"firstUsers":"Build it for your own college from its public timetable and share it in batch groups.","difficulty":2,"tags":["Web app","Students"],"stack":"Next.js with Supabase (Postgres), installable as a PWA"},{"id":"pet-care-log","title":"Pet care log shared by the family","pitch":"Everyone in the house logs walks, meals and medicine, so the pet is never double-fed or forgotten.","problem":"Families text each other 'did anyone feed the dog?' every single day.","whoPays":"Pet-owning families; pet sitters on a pro plan.","pricing":"Free for one pet; $3 per month for more pets and vet records.","mvp":["One-tap logs for walks, meals and meds","Shared household timeline","Reminders","Vet visit notes"],"firstUsers":"Put QR posters up in two vet clinics and a pet store near you.","difficulty":1,"tags":["Mobile","Family"],"stack":"Flutter with Firebase"},{"id":"tutor-booking","title":"Booking page for home tutors","pitch":"Tutors share one link where parents book slots, pay and get reminders.","problem":"Home tutors manage bookings over calls and chase payments at the end of every month.","whoPays":"Independent tutors and music teachers.","pricing":"$8 per month per tutor.","mvp":["Availability calendar","Parent booking with payment","Reminders by WhatsApp or email","Monthly earnings summary"],"firstUsers":"Set it up for five tutors you know and ask each to pass it to one colleague.","difficulty":2,"tags":["Web app","Small business"],"stack":"Next.js with Postgres and Stripe or Razorpay"},{"id":"run-club-routes","title":"Run club app with weekly routes","pitch":"Organizers post the weekly route and meetup point; members RSVP and see who's coming.","problem":"Run clubs coordinate in huge WhatsApp groups where the route gets buried.","whoPays":"Run club organizers; clubs pay for branding and member management.","pricing":"Free for 20 members; $9 per month per club.","mvp":["Post a route on a map","RSVP and headcount","Pace groups","Weekly reminder"],"firstUsers":"Join a weekend run club and offer to run their next three meetups on it.","difficulty":2,"tags":["Mobile","Community"],"stack":"Expo with Mapbox and Supabase"},{"id":"receipt-scanner","title":"Receipt scanner for freelancers' taxes","pitch":"Snap receipts, auto-fill amount and category, and export a tidy report at tax time.","problem":"Freelancers lose receipts and spend a stressful week rebuilding their expenses.","whoPays":"Freelancers and small business owners.","pricing":"Free for 20 receipts a month; $5 per month unlimited.","mvp":["Camera capture with text extraction","Automatic category and amount","Monthly summary","CSV and PDF export"],"firstUsers":"Offer a free year to freelancers in two online communities before tax season.","difficulty":2,"tags":["Mobile","Freelancers"],"stack":"Flutter or Expo with an OCR API and Postgres"},{"id":"walk-in-queue","title":"Walk-in queue for salons and small clinics","pitch":"Customers scan a QR code to join the queue and get a message when it's their turn.","problem":"Customers wait in crowded rooms with no idea how long it will take.","whoPays":"Salons, small clinics and repair shops.","pricing":"$12 per month per location.","mvp":["QR code to join the queue","Live position page","SMS or WhatsApp when it's your turn","Staff view to call the next person"],"firstUsers":"Set it up for free at a salon near campus and count how many walk-outs it saves.","difficulty":1,"tags":["Web app","Small business"],"stack":"SvelteKit or Next.js with Postgres and an SMS API"},{"id":"wedding-photo-drop","title":"Wedding photo drop for guests","pitch":"Guests scan a QR code at the venue and add their photos to one shared album, no app needed.","problem":"The best candid photos stay stuck on guests' phones after the wedding.","whoPays":"Couples, per wedding; photographers resell it as an add-on.","pricing":"$29 per event.","mvp":["QR code per event","Upload from the browser with no sign-up","Live slideshow for the venue screen","Download everything as a zip"],"firstUsers":"Offer it free at a friend's wedding and hand out cards to other guests.","difficulty":1,"tags":["Web app","Events"],"stack":"Next.js with S3-compatible storage such as Cloudflare R2"},{"id":"habit-for-two","title":"Habit tracker for two","pitch":"Pair up with one friend on one habit and see each other's daily check-ins.","problem":"Solo habit apps get abandoned; accountability with one friend works far better.","whoPays":"Consumers on a freemium plan.","pricing":"Free for one pair; $2 per month for more habits and stats.","mvp":["Invite a partner by link","Daily check-in for both","Streaks and nudges","Weekly recap"],"firstUsers":"Launch it with a 30-day challenge in your college's gym or coding club.","difficulty":1,"tags":["Mobile","Habits"],"stack":"Expo with Supabase and push notifications"},{"id":"canteen-ordering","title":"Order-ahead app for college canteens","pitch":"Students order from the canteen on their phone and pick up when it's ready.","problem":"Canteen queues eat half the lunch break.","whoPays":"Canteen operators; colleges for a campus license.","pricing":"A small fee per order.","mvp":["Menu with live availability","Order and pay online","Ready-for-pickup notification","Kitchen screen with the order queue"],"firstUsers":"Pilot it with one canteen for a week and measure the queue time before and after.","difficulty":2,"tags":["Web app","Students"],"stack":"Next.js PWA with Postgres and a payment gateway"},{"id":"tool-library","title":"Neighborhood tool library","pitch":"Neighbors list tools they rarely use and lend them with a simple request-and-return flow.","problem":"Everyone owns a drill they use twice a year, and the neighbor buys another one.","whoPays":"Residents' associations and housing societies.","pricing":"$20 per month per society.","mvp":["List items with photos","Request, approve and return flow","Due-date reminders","Trust score from past returns"],"firstUsers":"Start in your own building's group chat with ten items from friends.","difficulty":2,"tags":["Web app","Community"],"stack":"Django or Rails with Postgres, as a mobile-friendly web app"},{"id":"practice-log","title":"Practice log for music students","pitch":"Students log practice with a timer and short recordings; teachers see progress before each lesson.","problem":"Music teachers can't tell whether students practiced, and students lose motivation.","whoPays":"Music teachers and small music schools.","pricing":"$6 per month per teacher.","mvp":["Practice timer with notes","Record a short clip","Teacher dashboard per student","Weekly progress summary"],"firstUsers":"Offer it to three music teachers and their students for a free term.","difficulty":2,"tags":["Mobile","Education"],"stack":"Expo with Supabase storage for recordings"}]}</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

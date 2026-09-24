@@ -1,0 +1,78 @@
+name: Add a piece to an idea machine
+description: A new "what it is", "who it's for" or twist for one of the slot machines.
+title: "Reel piece: "
+labels: ["reel-piece"]
+body:
+  - type: dropdown
+    id: page
+    attributes:
+      label: Which page is it for?
+      options:
+        - Startup ideas (home page)
+        - CLI projects
+        - Web & mobile apps
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Which reel?
+      options:
+        - "First reel: what it is"
+        - "Second reel: who it's for"
+        - "Third reel: the twist"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Short label (max 24 characters)
+      description: What shows on the reel, like "Dog owners", "Git helper" or "Works offline".
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Full phrase
+      description: How it reads in a sentence, like "a marketplace", "for dog owners" or "that works fully offline".
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Type (first reel only)
+      options:
+        - "Not a first-reel piece"
+        - "Startup: Marketplace"
+        - "Startup: Subscription"
+        - "Startup: AI tool"
+        - "Startup: Social or community"
+        - "Startup: Dating"
+        - "Startup: Local directory"
+        - "Startup: Education"
+        - "Startup: Professional network"
+        - "Startup: Fitness or tracking"
+        - "Startup: Fintech"
+        - "CLI: Developer workflow"
+        - "CLI: Files and folders"
+        - "CLI: Data"
+        - "CLI: Terminal UI"
+        - "CLI: AI helper"
+        - "CLI: Servers and deploys"
+        - "CLI: Notes"
+        - "CLI: Images and media"
+        - "App: Productivity"
+        - "App: Social"
+        - "App: Marketplace"
+        - "App: Habits and health"
+        - "App: Learning"
+        - "App: Money"
+        - "App: Events and community"
+        - "App: Creators"
+  - type: input
+    attributes:
+      label: How would it make money? (second and third reel)
+      placeholder: Paid invites (or pay to skip the waitlist)
+  - type: input
+    attributes:
+      label: Where would you find the first users? (second reel only)
+  - type: input
+    attributes:
+      label: Credit me as
+      description: Name or @handle to show on the site. Leave it empty to use your GitHub username.

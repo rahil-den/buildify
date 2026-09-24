@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buildify — the startup idea machine</title>
+<meta name="description" content="Pull the lever for a startup idea: a business, an audience and a twist, plus a build-ready idea every day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-track="home" data-src="data/ideas.json">
+
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="logo" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 2.5v19M2.5 12h19M6.6 6.6l10.8 10.8M17.4 6.6 6.6 17.4"/></svg>
+      buildify
+    </a>
+    <nav class="nav-links" aria-label="Pages">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="cli.html">CLI projects</a>
+      <a href="apps.html">Web &amp; mobile apps</a>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" id="soundBtn" aria-label="Mute sounds" aria-pressed="false"></button>
+      <button class="btn js-pull">Pull the Lever <span aria-hidden="true">→</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="wrap hero">
+  <div class="hero-copy">
+    <div class="doodle">Random ideas.<br>Real challenges.<br>Build something.
+      <svg class="doodle-arrow" viewBox="0 0 44 54" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5c20-1 33 12 27 38"/><path d="M23.5 37.5 30 44.5l5-8"/></svg>
+    </div>
+    <h1 class="headline"><span class="l1">What are you</span><span class="l2">building?</span></h1>
+    <p class="lede">Pull the lever and get a business, an audience, and a twist. Good, bad, or cursed — then figure out how to make it real (and maybe even profitable).</p>
+    <button class="btn btn-lg js-pull">Pull the Lever <span aria-hidden="true">→</span></button>
+    <a class="today-link" href="#today"><span class="spark" aria-hidden="true">✦</span><span id="heroTodayLabel">Today's idea:</span><b id="heroTodayTitle"></b></a>
+  </div>
+
+  <div class="hero-machine">
+    <div class="machine-stage">
+      <div class="machine" id="machine">
+        <div class="m-ground"></div>
+        <i class="m-foot l"></i><i class="m-foot r"></i>
+
+        <svg class="m-shell" viewBox="0 0 420 378" aria-hidden="true">
+          <defs>
+            <linearGradient id="shellV" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#F9F7F2"/>
+              <stop offset=".45" stop-color="#EFEBE2"/>
+              <stop offset="1" stop-color="#E2DCCE"/>
+            </linearGradient>
+            <linearGradient id="shellH" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#6B5E45" stop-opacity=".10"/>
+              <stop offset=".035" stop-color="#FFFFFF" stop-opacity=".55"/>
+              <stop offset=".2" stop-color="#FFFFFF" stop-opacity="0"/>
+              <stop offset=".8" stop-color="#6B5E45" stop-opacity="0"/>
+              <stop offset=".965" stop-color="#6B5E45" stop-opacity=".08"/>
+              <stop offset="1" stop-color="#6B5E45" stop-opacity=".16"/>
+            </linearGradient>
+            <linearGradient id="hoodTint" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#FFFFFF" stop-opacity=".45"/>
+              <stop offset="1" stop-color="#8A7A58" stop-opacity=".07"/>
+            </linearGradient>
+            <linearGradient id="seamShade" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#6B5E45" stop-opacity="0"/>
+              <stop offset="1" stop-color="#6B5E45" stop-opacity=".12"/>
+            </linearGradient>
+            <clipPath id="shellClip">
+              <path d="M76 0H344C358 0 366.6 12.5 370 24L379 54Q382 64 391 64H393A27 27 0 0 1 420 91V351A27 27 0 0 1 393 378H27A27 27 0 0 1 0 351V91A27 27 0 0 1 27 64H29Q38 64 41 54L50 24C53.4 12.5 62 0 76 0Z"/>
+            </clipPath>
+          </defs>
+          <path d="M76 0H344C358 0 366.6 12.5 370 24L379 54Q382 64 391 64H393A27 27 0 0 1 420 91V351A27 27 0 0 1 393 378H27A27 27 0 0 1 0 351V91A27 27 0 0 1 27 64H29Q38 64 41 54L50 24C53.4 12.5 62 0 76 0Z" fill="url(#shellV)"/>
+          <g clip-path="url(#shellClip)">
+            <rect x="0" y="0" width="420" height="378" fill="url(#shellH)"/>
+            <rect x="0" y="0" width="420" height="64" fill="url(#hoodTint)"/>
+            <rect x="0" y="52" width="420" height="12" fill="url(#seamShade)"/>
+            <path d="M29 64.7H391" stroke="#FFFFFF" stroke-opacity=".9" stroke-width="1.4"/>
+            <path d="M76 0H344C358 0 366.6 12.5 370 24L379 54Q382 64 391 64H393A27 27 0 0 1 420 91V351A27 27 0 0 1 393 378H27A27 27 0 0 1 0 351V91A27 27 0 0 1 27 64H29Q38 64 41 54L50 24C53.4 12.5 62 0 76 0Z" fill="none" stroke="#FFFFFF" stroke-opacity=".95" stroke-width="3.2"/>
+          </g>
+          <path d="M76 0H344C358 0 366.6 12.5 370 24L379 54Q382 64 391 64H393A27 27 0 0 1 420 91V351A27 27 0 0 1 393 378H27A27 27 0 0 1 0 351V91A27 27 0 0 1 27 64H29Q38 64 41 54L50 24C53.4 12.5 62 0 76 0Z" fill="none" stroke="#9E957F" stroke-opacity=".45" stroke-width="1"/>
+        </svg>
+
+        <div class="m-hood-label"><span>IDEA MACHINE</span></div>
+
+        <div class="m-bezel">
+          <div class="m-window">
+            <div class="reel" id="reel0"><div class="strip"></div><div class="shade"></div></div>
+            <div class="reel" id="reel1"><div class="strip"></div><div class="shade"></div></div>
+            <div class="reel" id="reel2"><div class="strip"></div><div class="shade"></div></div>
+          </div>
+        </div>
+
+        <div class="m-base">
+          <svg class="m-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M12 1.5v21M1.5 12h21M7.2 7.2l9.6 9.6M16.8 7.2l-9.6 9.6"/></svg>
+          <span class="m-verdict" id="mVerdict"></span>
+        </div>
+
+        <div class="lv-hub"></div>
+        <div class="lv-collar"></div>
+        <div class="lv-rod" id="lvRod"></div>
+        <div class="lv-ball" id="lvBall"></div>
+        <div class="lv-note" aria-hidden="true">
+          <span>pull<br>it</span>
+          <svg viewBox="0 0 24 42" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3C6 10 5 26 12 38.5"/><path d="M10.4 4.4 16 3l-.8 5.6"/><path d="M7.4 34.4 12 38.8l2.9-5.6"/></svg>
+        </div>
+        <div class="lv-hit" id="lvHit" role="button" tabindex="0" aria-label="Pull the lever"></div>
+      </div>
+    </div>
+  </div>
+
+  <aside class="hero-side">
+    <div class="sticky">Bad ideas<br>can lead to<br>great products.
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.2c1.9 2.2 5.1 2.2 7 0"/><path d="M9 9.6v.4M15 9.6v.4"/></svg>
+    </div>
+    <div class="recent">
+      <div class="recent-title"><i></i>RECENT IDEAS</div>
+      <ul id="recentList"></ul>
+    </div>
+  </aside>
+</section>
+
+<section class="wrap" id="features">
+  <div class="features">
+    <div class="feature">
+      <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M13.2 2.5 4.8 13.6h6.4l-1 7.9 8.5-11.3h-6.4l.9-7.7z"/></svg></span>
+      <div><h3>Random Ideas</h3><p>Never the same twice.</p></div>
+    </div>
+    <div class="feature">
+      <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="8.2" r="3.3"/><path d="M2.8 19.6c0-3.5 2.8-6 6.2-6s6.2 2.5 6.2 6M15.4 5.2a3.1 3.1 0 0 1 0 6M17.6 13.9c2.2.7 3.6 2.8 3.6 5.4"/></svg></span>
+      <div><h3>Unique Combinations</h3><p id="comboCount">Business × Audience × Twist</p></div>
+    </div>
+    <div class="feature">
+      <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3.5 8.5 8 12.4 12 5.5l4 6.9 4.5-3.9-1.8 10H5.3z"/><path d="M5.6 20.5h12.8"/></svg></span>
+      <div><h3>Build Challenges</h3><p>A build-ready idea every day.</p></div>
+    </div>
+    <div class="feature">
+      <span class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="5.8" r="2.6"/><circle cx="18" cy="18.2" r="2.6"/><path d="M8.3 10.8l7.4-3.8M8.3 13.2l7.4 3.8"/></svg></span>
+      <div><h3>Share &amp; Compare</h3><p>See what others build.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="idea">
+  <div class="idea" aria-live="polite">
+    <span class="idea-legend" id="ideaLegend">Example idea</span>
+    <div class="idea-col">
+      <span class="pill" id="ideaBadge"></span>
+      <p class="idea-sentence" id="ideaSentence"></p>
+      <button class="btn-ghost brief-btn" type="button" id="briefBtn">See the build brief</button>
+    </div>
+    <div class="idea-col">
+      <div class="money-head"><span class="plus">+</span>How to monetize it</div>
+      <ul class="money-list" id="moneyList"></ul>
+    </div>
+    <div class="idea-col idea-sketch" aria-hidden="true">
+      <svg viewBox="0 0 190 130" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="rotate(-14 42 70)">
+          <rect x="24" y="36" width="36" height="62" rx="7"/>
+          <rect x="29" y="44" width="26" height="42" rx="2"/>
+          <path d="M37 91.5h10"/>
+          <rect x="35" y="57" width="14" height="14" rx="3"/>
+          <path d="M42 67v-7M39 62.5l3-3 3 3"/>
+        </g>
+        <path d="M150 104c-18 18-54 16-76-4"/>
+        <path d="M75.5 110 73.6 99.4l10.4 1.7"/>
+      </svg>
+      <span class="sketch-note">Great<br>idea?<br>or<br>terrible?</span>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="today">
+  <div class="today">
+    <span class="idea-legend" id="tdLegend">Idea of the day</span>
+    <div class="today-main" id="tdMain">
+      <div class="today-meta"><span class="date-chip" id="tdDate"></span><span id="tdSource"></span></div>
+      <h2 class="today-title" id="tdTitle"></h2>
+      <p class="today-pitch" id="tdPitch"></p>
+      <div class="today-tags" id="tdTags"></div>
+      <div class="today-actions">
+        <button class="btn" type="button" id="tdCopy">Copy the build brief</button>
+        <a class="btn-ghost" id="suggestBtn" href="#">Suggest an idea</a>
+      </div>
+      <p class="status" id="tdStatus" role="status"></p>
+    </div>
+    <div class="today-brief" id="tdBrief">
+      <dl class="facts">
+        <div><dt>Problem</dt><dd id="tdProblem"></dd></div>
+        <div><dt id="tdWhoLabel">Who pays</dt><dd id="tdWho"></dd></div>
+        <div id="tdPricingRow"><dt>Pricing</dt><dd id="tdPricing"></dd></div>
+        <div id="tdStackRow"><dt>Stack</dt><dd id="tdStack"></dd></div>
+      </dl>
+      <div class="mvp-head" id="tdMvpHead">MVP</div>
+      <ol class="mvp" id="tdMvp"></ol>
+      <p class="first"><b>First 10 users:</b> <span id="tdFirst"></span></p>
+    </div>
+  </div>
+  <div class="archive" role="group" aria-label="Ideas from this week">
+    <span class="archive-label">This week</span>
+    <div class="archive-list" id="tdArchive"></div>
+  </div>
+  <p class="piece-note">Got a business, audience or twist for the machine? <a id="pieceLink" href="#">Add a reel piece</a></p>
+</section>
+</main>
+
+<section class="bottom" id="about">
+  <svg class="waves" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="wGreen" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#D3E0C9"/><stop offset=".55" stop-color="#E3E9D9" stop-opacity=".6"/><stop offset="1" stop-color="#EFE9DD" stop-opacity="0"/></linearGradient>
+      <linearGradient id="wPeach" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#F3E6D6" stop-opacity="0"/><stop offset=".5" stop-color="#F3E1CC" stop-opacity=".55"/><stop offset="1" stop-color="#F0D6BA"/></linearGradient>
+    </defs>
+    <path d="M0 96C260 40 470 150 720 170S1160 210 1440 170V320H0Z" fill="url(#wGreen)"/>
+    <path d="M0 240C320 270 640 190 930 150S1300 90 1440 70V320H0Z" fill="url(#wPeach)"/>
+  </svg>
+  <div class="cta">
+    <div class="eyebrow">STILL THINKING?</div>
+    <h2>Just pull the lever.</h2>
+    <p>The next idea could be your biggest project yet.</p>
+    <button class="btn btn-lg js-pull">Pull the Lever <span aria-hidden="true">→</span></button>
+  </div>
+  <footer class="wrap foot">
+    <div class="foot-left"><span class="script-logo">Buildify</span><span class="foot-line"></span></div>
+    <div class="foot-tag"><span>BAD IDEAS BUILD<br>GREAT PEOPLE.</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3.5 8.5 8 12.4 12 5.5l4 6.9 4.5-3.9-1.8 10H5.3z"/><path d="M5.6 20.5h12.8"/></svg>
+    </div>
+  </footer>
+</section>
+
+<dialog class="brief-dialog" id="briefDialog" aria-labelledby="bdTitle">
+  <button class="bd-x" type="button" id="bdClose" aria-label="Close">×</button>
+  <div class="bd-kicker">Build brief</div>
+  <h3 class="bd-title" id="bdTitle"></h3>
+  <p class="bd-meta" id="bdMeta"></p>
+  <div id="bdBody"></div>
+  <div class="bd-actions"><button class="btn" type="button" id="bdCopy">Copy as Markdown</button><p class="status" id="bdStatus" role="status"></p></div>
+</dialog>
+
+<script type="application/json" id="buildify-data">{"version":1,"updated":"2026-09-24T00:00:00Z","config":{"repo":""},"page":{"reels":[{"label":"Business","sub":"(what it is)","icon":"briefcase"},{"label":"Audience","sub":"(for whom)","icon":"people"},{"label":"Twist","sub":"(the catch)","icon":"sparkle"}],"daily":"Idea of the day","noun":"idea","who":"Who pays","example":["Marketplace","Your college","Disappears after 24 hours"]},"reels":{"business":[{"text":"a marketplace","short":"Marketplace","tag":"marketplace","w":1},{"text":"a subscription box","short":"Subscription box","tag":"subscription","w":0},{"text":"an AI copilot","short":"AI copilot","tag":"ai","w":1},{"text":"a social app","short":"Social app","tag":"social","w":0},{"text":"a dating app","short":"Dating app","tag":"dating","w":-1},{"text":"a Yelp-style directory","short":"Yelp-style directory","tag":"local","w":1},{"text":"a Duolingo-style trainer","short":"Duolingo-style trainer","tag":"education","w":1},{"text":"an Uber-style dispatcher","short":"Uber-style dispatch","tag":"marketplace","w":0},{"text":"a Discord-style community","short":"Discord-style community","tag":"social","w":1},{"text":"a LinkedIn-style network","short":"LinkedIn-style network","tag":"professional","w":0},{"text":"a Strava-style tracker","short":"Strava-style tracker","tag":"fitness","w":0},{"text":"a Robinhood-style app","short":"Robinhood-style app","tag":"fintech","w":-2}],"audience":[{"text":"for your college","short":"Your college","money":{"t":"Sponsored campus drops","n":"local brands pay to reach students"},"firstUsers":"Post in your college's clubs and WhatsApp groups; aim for 20 students in week one.","w":1},{"text":"for retirees","short":"Retirees","money":{"t":"Family plans","n":"adult kids pay for their parents"},"firstUsers":"Partner with one community center or residents' association and run a hands-on demo.","w":1},{"text":"for dog owners","short":"Dog owners","money":{"t":"Pet-brand sponsors","n":"treats, toys, vets"},"firstUsers":"Spend a weekend at the nearest dog park and pet stores; recruit 15 owners.","w":0},{"text":"for night-shift nurses","short":"Night-shift nurses","money":{"t":"Hospital licenses","n":"sold to staffing teams"},"firstUsers":"Ask nurse friends to share it in their ward group; one ward is enough to start.","w":1},{"text":"for exchange students","short":"Exchange students","money":{"t":"University partnerships","n":"paid by international offices"},"firstUsers":"Contact your university's international office and the exchange-student society.","w":0},{"text":"for new parents","short":"New parents","money":{"t":"Baby-brand affiliates","n":"commission on gear"},"firstUsers":"Join local parent groups and prenatal classes; offer it free to the first 30 families.","w":1},{"text":"for gym regulars","short":"Gym regulars","money":{"t":"Gym partnerships","n":"referral fee per sign-up"},"firstUsers":"Pitch one gym owner: free for their members for a month in exchange for feedback.","w":0},{"text":"for remote teams","short":"Remote teams","money":{"t":"Per-seat pricing","n":"companies pay per employee"},"firstUsers":"Message founders of 10 small remote startups on LinkedIn or X and offer a free pilot.","w":1},{"text":"for landlords","short":"Landlords","money":{"t":"Per-property fee","n":"monthly, per unit"},"firstUsers":"Find small landlords in local property groups and set up their first building for them.","w":-1},{"text":"for substitute teachers","short":"Substitute teachers","money":{"t":"District licenses","n":"schools pay, teachers don't"},"firstUsers":"Talk to one school's admin office; that's usually who books substitutes.","w":0},{"text":"for plant owners","short":"Plant owners","money":{"t":"Nursery affiliates","n":"a cut of every plant sold"},"firstUsers":"Partner with a local nursery and put a QR code on their plant tags.","w":-1},{"text":"for wedding planners","short":"Wedding planners","money":{"t":"Vendor lead fees","n":"caterers pay for referrals"},"firstUsers":"Cold-email 20 planners you find on Instagram with a 60-second demo video.","w":0}],"twist":[{"text":"where everything is anonymous","short":"Everything is anonymous","tag":"anon","money":{"t":"Ads","n":"no personal data, so ads carry the load"},"w":-1},{"text":"where it costs a dollar every time you use it","short":"$1 every time you use it","tag":"paywall","money":{"t":"$1 per use","n":"the twist is the business model"},"w":0},{"text":"where it only works from 6 to 9am","short":"Only works 6–9am","tag":"timeboxed","money":{"t":"Off-hours pass","n":"pay to use it anytime"},"w":-1},{"text":"where AI writes everything for you","short":"AI writes everything","tag":"ai","money":{"t":"Compute pass-through","n":"heavier users pay more"},"w":1},{"text":"where it's entirely voice-based","short":"Voice only","tag":"voice","money":{"t":"Voice minutes","n":"free allotment, then paid"},"w":0},{"text":"where you only get one use a day","short":"One use a day","tag":"scarcity","money":{"t":"Extra pulls","n":"pay to skip the daily limit"},"w":1},{"text":"where it only shows things within 500 feet","short":"Only within 500 feet","tag":"hyperlocal","money":{"t":"Venue partnerships","n":"hyperlocal ads pay more"},"w":1},{"text":"where a real human reviews every post","short":"A human reviews every post","tag":"human","money":{"t":"Human-reviewed tier","n":"it's your biggest cost"},"w":-1},{"text":"where everything disappears after 24 hours","short":"Disappears after 24 hours","tag":"ephemeral","money":{"t":"Keep it forever","n":"pay to save before it vanishes"},"w":0},{"text":"where it's invite-only","short":"Invite-only","tag":"invite","money":{"t":"Paid invites","n":"or pay to skip the waitlist"},"w":1},{"text":"where strangers rate you on it","short":"Strangers rate you","tag":"rating","money":{"t":"Legal budget","n":"honestly, this one is mostly liability"},"w":-2},{"text":"where it only works with friends of friends","short":"Friends of friends only","tag":"trust","money":{"t":"Verified circles","n":"pay to expand your network"},"w":1}]},"money":{"byTag":{"marketplace":[{"t":"Transaction fee","n":"e.g. 5–10% per sale"},{"t":"Featured listings","n":"pay to show up first"}],"subscription":[{"t":"Monthly subscription","n":"the box is the business"},{"t":"Premium tier","n":"rarer, better stuff"}],"ai":[{"t":"Usage-based pricing","n":"pay per generation"},{"t":"Pro plan","n":"unlimited runs"}],"social":[{"t":"Freemium","n":"paid profile perks"},{"t":"Ads","n":"only once engagement is real"}],"dating":[{"t":"Subscription","n":"unlimited matches"},{"t":"Boosts","n":"pay for extra visibility"}],"local":[{"t":"Local business ads","n":"nearby shops pay to appear"},{"t":"Booking commission","n":"a cut of every reservation"}],"education":[{"t":"Freemium","n":"paid streaks and progress"},{"t":"B2B licenses","n":"schools and employers"}],"professional":[{"t":"Pro subscription","n":"advanced search"},{"t":"Recruiter access","n":"pay per lead"}],"fitness":[{"t":"Freemium","n":"paid insights and streaks"},{"t":"Brand sponsorships","n":"sponsored challenges"}],"fintech":[{"t":"Per-trade fee","n":"once compliance is paid for"},{"t":"Interest on float","n":"idle balances"}]}},"build":{"byTag":{"marketplace":["Listings with photos, price and categories","Search, filters and chat between buyer and seller","Payments that take a platform fee (Stripe Connect or Razorpay Route)"],"subscription":["A landing page with three plans and a waitlist","Checkout with recurring billing","A simple admin for stock, boxes and shipping"],"ai":["One prompt flow that does a single job really well","Usage tracking with a free monthly quota","Saved history so people come back"],"social":["Profiles and a feed with posts and reactions","Invite links so every user brings friends","Basic moderation: report, block, delete"],"dating":["Profiles built on prompts instead of bios","Mutual-like matching and chat","Safety first: verification, report and block"],"local":["Listings with location, hours and photos","Search by distance and category","Reviews with photo proof to cut spam"],"education":["Bite-sized lessons with a daily streak","Quick quizzes with instant feedback","A progress dashboard for learners and teachers"],"professional":["Profiles built around skills and proof of work","Search and filters for the people who hire","Intro requests instead of cold DMs"],"fitness":["One-tap logging for the core activity","Streaks, goals and weekly summaries","Leaderboards with friends or a club"],"fintech":["Read-only first: track and visualize, don't move money","Bank or UPI data import with clear consent","Talk to a compliance expert before handling real transactions"]}},"daily":[{"id":"shift-swap-wards","title":"Shift-swap board for hospital wards","pitch":"Nurses post and claim open shifts in two taps, and the ward manager approves from their phone.","problem":"Shift swaps live in chaotic WhatsApp groups and paper rosters, so managers lose track of who is actually covering.","whoPays":"Ward managers and small private hospitals.","pricing":"$3 per nurse per month; first ward free for 60 days.","mvp":["Import the roster from a spreadsheet","Post a shift, claim a shift","One-tap manager approval","WhatsApp or SMS alerts for open shifts"],"firstUsers":"Ask three nurse friends which ward runs swaps on WhatsApp, then offer that ward a free setup.","difficulty":2,"tags":["B2B","Healthcare ops"]},{"id":"college-club-manager","title":"Club manager for college societies","pitch":"Members, events, dues and QR attendance for student clubs, in one place instead of five spreadsheets.","problem":"Every year the new committee inherits messy sheets, unpaid dues and no record of who attended what.","whoPays":"Student councils and college activity offices, as a campus license.","pricing":"Free for one club; $49 per month for a whole campus.","mvp":["Member directory with roles","Event pages with QR check-in","Dues collection through UPI or card links","Handover mode for next year's committee"],"firstUsers":"Run it for your college's two biggest clubs this semester, then pitch the student council with their numbers.","difficulty":2,"tags":["Students","B2B"]},{"id":"invoice-chaser","title":"Polite invoice chaser for freelancers","pitch":"Connect your invoices and it sends friendly, escalating reminders until you get paid.","problem":"Freelancers hate chasing clients, so late invoices sit for weeks and cash flow suffers.","whoPays":"Freelance designers, developers and small agencies.","pricing":"$9 per month.","mvp":["Add an invoice by upload or forwarded email","Reminder schedule with three tone levels","Client-facing pay-now page","Dashboard of who owes what"],"firstUsers":"Offer a free overdue-invoice audit in two freelancer communities and follow up with everyone who replies.","difficulty":1,"tags":["Freelancers","Finance ops"]},{"id":"tuition-center-app","title":"Fee and attendance app for tuition centers","pitch":"Batches, attendance, fee reminders and parent updates for small coaching classes, run from one phone.","problem":"Tuition owners track fees in notebooks and chase parents one phone call at a time.","whoPays":"Owners of coaching and tuition centers with 30 to 300 students.","pricing":"$15 per month per center; free under 25 students.","mvp":["Batches and student list","One-tap attendance","Automatic fee reminders on WhatsApp","Monthly progress note to parents"],"firstUsers":"Visit five tuition centers near your college with a one-page demo and set up the first one for free.","difficulty":1,"tags":["Education","Small business"]},{"id":"tiny-status-page","title":"Five-minute status page for tiny SaaS","pitch":"Uptime checks and a clean public status page, priced for products with 10 customers, not 10,000.","problem":"Small teams skip status pages because the big tools are pricey and take an afternoon to set up.","whoPays":"Indie hackers and two-to-ten person software teams.","pricing":"$5 per month for five monitors and one status page.","mvp":["HTTP checks every minute from two regions","Public status page with incident notes","Email and Slack alerts","Embeddable 'all systems normal' badge"],"firstUsers":"Offer it free to 20 makers launching this month in exchange for the badge in their footer.","difficulty":2,"tags":["Dev tools","B2B"]},{"id":"mock-interview-matcher","title":"Mock-interview matcher for placement season","pitch":"Pairs juniors with seniors who cracked the same companies for 30-minute mock interviews.","problem":"Students prepare alone while the seniors who already got those offers are one message away but hard to schedule.","whoPays":"College placement cells; students pay for slots with alumni.","pricing":"$99 per semester per college; alumni slots at $5 each.","mvp":["Seniors list the companies and roles they cleared","Juniors book open slots","Built-in video link and feedback form","Leaderboard of the most helpful seniors"],"firstUsers":"Get 15 final-year students from your batch to host slots, then share the booking link in the junior groups.","difficulty":2,"tags":["Students","Careers"]},{"id":"gym-renewals","title":"Renewal tracker for neighborhood gyms","pitch":"Shows which memberships expire this week and sends renewal nudges automatically.","problem":"Small gyms lose members simply because nobody reminded them their plan ended.","whoPays":"Owners of single-location gyms, yoga and martial-arts studios.","pricing":"$12 per month per location.","mvp":["Member list with plan end dates","Automatic renewal reminders","Pay-to-renew link","Weekly at-risk members report"],"firstUsers":"Offer three gyms near you a free import of their register and track the renewals you save them.","difficulty":1,"tags":["Small business","Fitness"]},{"id":"podcast-show-notes","title":"Show notes from a podcast episode, automatically","pitch":"Upload an episode and get a transcript, chapters, show notes and three social clips to review.","problem":"Small podcasters spend hours on show notes and chapter markers after every episode.","whoPays":"Independent podcasters and small podcast agencies.","pricing":"$19 per month for four episodes.","mvp":["Audio upload and transcription","Chapter markers with timestamps","Editable show-notes draft","Export to the podcast host's description field"],"firstUsers":"Process the latest episode of 20 small podcasts for free and email each host the result.","difficulty":2,"tags":["Creators","AI"]},{"id":"fest-checkin","title":"Ticketing and QR check-in for college fests","pitch":"Sell passes, scan them at the gate, and watch live headcounts for every event in the fest.","problem":"Fest teams juggle Google Forms, payment screenshots and long gate queues.","whoPays":"Fest committees and event clubs.","pricing":"A small fee per ticket sold; free for free events.","mvp":["Event pages with pass types","Payments with instant QR passes","Scanner mode on any phone","Live dashboard of entries per event"],"firstUsers":"Run check-in for one department event for free, then pitch the main fest committee with the queue times you saved.","difficulty":2,"tags":["Students","Events"]},{"id":"clinic-no-shows","title":"No-show reducer for small clinics","pitch":"Appointment reminders with one-tap confirm or reschedule, so empty slots get refilled.","problem":"Dentists and small clinics lose hours every week to patients who forget appointments.","whoPays":"Independent clinics, dentists and physiotherapists.","pricing":"$25 per month per practitioner.","mvp":["Simple appointment calendar or import","Reminders a day and two hours before","Confirm and reschedule buttons","Waitlist that fills cancelled slots"],"firstUsers":"Ask your own dentist how many no-shows they had last month, then offer a free month to cut that number.","difficulty":2,"tags":["Healthcare ops","Small business"]},{"id":"rent-receipts","title":"Rent reminders and receipts for small landlords","pitch":"Automatic rent reminders, payment links and clean receipts for landlords with a few units.","problem":"Small landlords chase rent over text and scramble for receipts at tax time.","whoPays":"Landlords with 2 to 20 units.","pricing":"$2 per unit per month.","mvp":["Units and tenants list","Monthly reminders with a pay link","Auto-generated receipts","Year-end summary export"],"firstUsers":"Find landlords in local property groups and offer to set up their first building for them.","difficulty":1,"tags":["Real estate","Small business"]},{"id":"internship-tracker","title":"Internship application tracker","pitch":"A simple pipeline for every application, deadline and follow-up, like a CRM for your job hunt.","problem":"Students apply to 50+ roles across portals, emails and sheets, and miss follow-ups.","whoPays":"Students on a freemium plan; placement cells for cohort dashboards.","pricing":"Free for 15 applications; $3 per month after that.","mvp":["Board of applications by stage","Deadline and follow-up reminders","Save roles with a browser button","Response rate per resume version"],"firstUsers":"Share it in your batch's placement group before the next hiring cycle opens.","difficulty":1,"tags":["Students","Careers"]},{"id":"shop-reorder-alerts","title":"Low-stock alerts for small shops","pitch":"Scan purchase bills and get a reorder list before best-sellers run out.","problem":"Small shops run out of top items because stock lives in the owner's head.","whoPays":"Neighborhood grocery stores, pharmacies and stationery shops.","pricing":"$8 per month per store.","mvp":["Product list built from purchase bills","Quick daily count or sales tally","Reorder alerts on WhatsApp","One-tap order message to the supplier"],"firstUsers":"Spend a Saturday setting it up at one shop, then ask them to introduce you to their supplier's other shops.","difficulty":2,"tags":["Retail","Small business"]},{"id":"photo-selection","title":"Photo selection app for wedding photographers","pitch":"Clients heart favorites from thousands of photos, and the photographer gets a clean final list.","problem":"Couples send favorites as WhatsApp screenshots, and photographers spend days matching file names.","whoPays":"Wedding and event photographers.","pricing":"$15 per month for unlimited galleries.","mvp":["Fast gallery upload with thumbnails","Private client link with favorites","Export selected file names for editing","Watermarked previews"],"firstUsers":"Message 30 wedding photographers on Instagram with a 60-second demo using their own sample photos.","difficulty":2,"tags":["Creators","B2B"]},{"id":"hackathon-judging","title":"Judging and scoring tool for hackathons","pitch":"Judges score projects on a shared rubric from their phones, and the leaderboard updates live.","problem":"Hackathon judging runs on paper sheets and a frantic spreadsheet at 2 a.m.","whoPays":"Hackathon organizers, tech clubs and companies running internal hacks.","pricing":"$29 per event; free for student events under 50 teams.","mvp":["Rubric builder","Judge assignments per room or track","Mobile scoring form","Live leaderboard with tie-breakers"],"firstUsers":"Offer it free to the next hackathon at your college and at two nearby colleges.","difficulty":1,"tags":["Events","Students"]},{"id":"alumni-mentors","title":"Alumni mentor matching for one college","pitch":"Students request 20-minute chats with alumni by role, company and city.","problem":"Alumni want to help, but students don't know whom to ask and cold messages go unanswered.","whoPays":"Colleges and alumni associations.","pricing":"$1,000 per year per college, with a free pilot semester.","mvp":["Alumni profiles with 'ask me about' topics","Request and accept flow","Calendar slots","Thank-you notes alumni can share"],"firstUsers":"Recruit 25 alumni from your own department through LinkedIn, then launch it to your batch.","difficulty":2,"tags":["Students","Community"]},{"id":"testimonial-wall","title":"Testimonial collector for small businesses","pitch":"Send one link, collect text or video testimonials, and embed a clean wall of them on your site.","problem":"Great customer feedback gets lost in DMs and email instead of helping sell.","whoPays":"Coaches, course creators, small SaaS and local services.","pricing":"Free for 10 testimonials; $12 per month for unlimited.","mvp":["Shareable collection form for text and video","Approve or hide each entry","Embeddable wall and carousel","Import from Google reviews"],"firstUsers":"Collect testimonials for three local businesses for free and publish their walls as case studies.","difficulty":1,"tags":["Marketing","Small business"]},{"id":"github-portfolio","title":"Portfolio site from your GitHub, in one click","pitch":"Turns your repos and READMEs into a clean portfolio page recruiters actually read.","problem":"Students have good projects on GitHub but no portfolio that explains them.","whoPays":"Students and junior developers on a freemium plan.","pricing":"Free on a subdomain; $4 per month for a custom domain.","mvp":["Sign in with GitHub","Pick projects and auto-generate summaries","Three themes","Custom domain and a recruiter-view counter"],"firstUsers":"Build portfolios for 20 friends in your batch and share the best ones in developer communities.","difficulty":1,"tags":["Students","Dev tools"]},{"id":"whatsapp-menu","title":"Daily specials menu updated by WhatsApp","pitch":"The owner sends a WhatsApp message and the QR menu on every table updates instantly.","problem":"Small restaurants print menus that go stale and can't show daily specials or sold-out items.","whoPays":"Cafés and small restaurants.","pricing":"$10 per month per location.","mvp":["QR menu page","Update items and prices by WhatsApp message","Mark sold-out in one tap","View counts per dish"],"firstUsers":"Set it up for your favorite café near campus for free and ask the owner to refer two neighbors.","difficulty":2,"tags":["Hospitality","Small business"]},{"id":"flatmate-bills","title":"Bill splitter for shared flats and hostels","pitch":"Tracks rent, electricity and groceries per flatmate, with UPI or card links to settle up.","problem":"Flatmates argue over who paid for what, and the math gets messy when people move in and out.","whoPays":"Students and young professionals; co-living operators for a branded version.","pricing":"Free for one flat; $2 per month for recurring bills and receipts.","mvp":["Flats with members","Recurring and one-off expenses","Balances with settle-up links","Move-in and move-out proration"],"firstUsers":"Start with your own flat and two friends' flats, then post in hostel and PG groups near campus.","difficulty":1,"tags":["Consumer","Students"]},{"id":"changelog-widget","title":"Changelog widget for small apps","pitch":"Write updates once and show them in-app, on a public page and in a monthly email.","problem":"Small teams ship constantly, but users never notice new features and churn.","whoPays":"Small SaaS teams and indie app makers.","pricing":"$9 per month for one product.","mvp":["Markdown editor for updates","Embeddable in-app widget","Public changelog page","Monthly digest email to users"],"firstUsers":"Offer free setup to 15 indie makers who post weekly updates on X or Reddit.","difficulty":1,"tags":["Dev tools","Marketing"]},{"id":"ta-rubric-grading","title":"Rubric grading tool for teaching assistants","pitch":"Grade assignments against a rubric with reusable comments, then export marks in one click.","problem":"TAs rewrite the same feedback a hundred times and copy marks into the college portal by hand.","whoPays":"Departments and TAs at colleges and coaching institutes.","pricing":"Free for one course; $39 per month per department.","mvp":["Rubric builder","Side-by-side grading view","Comment bank with shortcuts","CSV export in the portal's format"],"firstUsers":"Ask two TAs in your department to grade one assignment with it and time how long it takes.","difficulty":2,"tags":["Education","B2B"]},{"id":"warranty-locker","title":"Bill and warranty locker","pitch":"Snap a bill once and get reminded before the warranty or return window runs out.","problem":"People lose bills and miss free repairs or returns on things they already paid for.","whoPays":"Consumers on a freemium plan; electronics stores for a branded version.","pricing":"Free for 10 items; $1 per month for unlimited and family sharing.","mvp":["Photo upload with date and product fields","Warranty and return-window reminders","Search by product or store","Share items with family"],"firstUsers":"Post a short 'never lose a bill again' video in your city's local groups and collect the first 100 users.","difficulty":1,"tags":["Consumer","Productivity"]},{"id":"volunteer-scheduler","title":"Volunteer scheduling for small NGOs","pitch":"Volunteers pick shifts from a link, get reminders, and the NGO sees hours logged for reports.","problem":"Small NGOs coordinate volunteers over spreadsheets and calls, and people forget their shifts.","whoPays":"Small NGOs and community groups, often from grant budgets.","pricing":"Free under 30 volunteers; $15 per month after.","mvp":["Shift sign-up page","Reminders by WhatsApp or email","Check-in and hours log","Impact report export for donors"],"firstUsers":"Volunteer with one NGO for a weekend and set it up for their next drive.","difficulty":1,"tags":["Nonprofit","Community"]}]}</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

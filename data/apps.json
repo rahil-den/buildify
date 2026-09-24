@@ -1,0 +1,737 @@
+{
+  "version": 1,
+  "updated": "2026-09-24T00:00:00Z",
+  "config": {
+    "repo": ""
+  },
+  "page": {
+    "reels": [
+      {
+        "label": "App",
+        "sub": "(what it is)",
+        "icon": "devices"
+      },
+      {
+        "label": "Users",
+        "sub": "(for whom)",
+        "icon": "people"
+      },
+      {
+        "label": "Twist",
+        "sub": "(the catch)",
+        "icon": "sparkle"
+      }
+    ],
+    "daily": "App of the day",
+    "noun": "app",
+    "who": "Who pays",
+    "example": [
+      "Expense splitter",
+      "Roommates",
+      "Works offline"
+    ],
+    "stack": "Next.js with Supabase for a web app or PWA. If it's mobile-first, use Expo (React Native) on the same Supabase backend."
+  },
+  "reels": {
+    "business": [
+      {
+        "text": "a habit tracker",
+        "short": "Habit tracker",
+        "tag": "health",
+        "w": 0
+      },
+      {
+        "text": "a shared to-do app",
+        "short": "Shared to-do app",
+        "tag": "productivity",
+        "w": 1
+      },
+      {
+        "text": "a peer-to-peer rental app",
+        "short": "Rental app",
+        "tag": "marketplace",
+        "w": 1
+      },
+      {
+        "text": "a group expense splitter",
+        "short": "Expense splitter",
+        "tag": "money",
+        "w": 1
+      },
+      {
+        "text": "a study buddy finder",
+        "short": "Study buddy finder",
+        "tag": "learning",
+        "w": 1
+      },
+      {
+        "text": "an event RSVP app",
+        "short": "Event RSVP app",
+        "tag": "community",
+        "w": 1
+      },
+      {
+        "text": "a link-in-bio page builder",
+        "short": "Link-in-bio builder",
+        "tag": "creator",
+        "w": 0
+      },
+      {
+        "text": "a photo-sharing app",
+        "short": "Photo-sharing app",
+        "tag": "social",
+        "w": -1
+      },
+      {
+        "text": "a budget tracker",
+        "short": "Budget tracker",
+        "tag": "money",
+        "w": 0
+      },
+      {
+        "text": "a flashcards app",
+        "short": "Flashcards app",
+        "tag": "learning",
+        "w": 0
+      },
+      {
+        "text": "a neighborhood noticeboard",
+        "short": "Neighborhood board",
+        "tag": "community",
+        "w": 0
+      },
+      {
+        "text": "a meme-based social network",
+        "short": "Meme social network",
+        "tag": "social",
+        "w": -2
+      }
+    ],
+    "audience": [
+      {
+        "text": "for college students",
+        "short": "College students",
+        "money": {
+          "t": "Campus sponsorships",
+          "n": "brands pay to reach students"
+        },
+        "firstUsers": "Launch in your own college's WhatsApp and Instagram groups.",
+        "w": 1
+      },
+      {
+        "text": "for new parents",
+        "short": "New parents",
+        "money": {
+          "t": "Family plan",
+          "n": "both parents on one subscription"
+        },
+        "firstUsers": "Share it in local parent groups and prenatal classes.",
+        "w": 1
+      },
+      {
+        "text": "for roommates",
+        "short": "Roommates",
+        "money": {
+          "t": "Flat plan",
+          "n": "one payment covers the flat"
+        },
+        "firstUsers": "Start with your own flat, then hostel and PG groups.",
+        "w": 1
+      },
+      {
+        "text": "for small gym owners",
+        "short": "Gym owners",
+        "money": {
+          "t": "Per-location fee",
+          "n": "monthly"
+        },
+        "firstUsers": "Visit three gyms nearby and set it up for them for free.",
+        "w": 0
+      },
+      {
+        "text": "for pet owners",
+        "short": "Pet owners",
+        "money": {
+          "t": "Pet-brand sponsors",
+          "n": "food and toy brands"
+        },
+        "firstUsers": "Put QR posters up at vet clinics and pet stores.",
+        "w": 0
+      },
+      {
+        "text": "for freelancers",
+        "short": "Freelancers",
+        "money": {
+          "t": "Pro plan",
+          "n": "freelancers pay for time savers"
+        },
+        "firstUsers": "Share it in freelancer communities with a free template.",
+        "w": 1
+      },
+      {
+        "text": "for travelers",
+        "short": "Travelers",
+        "money": {
+          "t": "Trip passes",
+          "n": "pay per trip, not monthly"
+        },
+        "firstUsers": "Post in backpacker groups and on hostel noticeboards.",
+        "w": 0
+      },
+      {
+        "text": "for local shop owners",
+        "short": "Shop owners",
+        "money": {
+          "t": "Monthly fee",
+          "n": "per shop"
+        },
+        "firstUsers": "Walk into five shops near you with a demo on your phone.",
+        "w": 0
+      },
+      {
+        "text": "for runners",
+        "short": "Runners",
+        "money": {
+          "t": "Club plans",
+          "n": "running clubs pay for members"
+        },
+        "firstUsers": "Join a weekend run club and bring it to their group chat.",
+        "w": 0
+      },
+      {
+        "text": "for teachers",
+        "short": "Teachers",
+        "money": {
+          "t": "School license",
+          "n": "schools pay per teacher"
+        },
+        "firstUsers": "Ask one teacher you know to try it with a single class.",
+        "w": 1
+      },
+      {
+        "text": "for night owls",
+        "short": "Night owls",
+        "money": {
+          "t": "Premium dark mode",
+          "n": "yes, really"
+        },
+        "firstUsers": "Post at 3 a.m. in the communities where they hang out.",
+        "w": -1
+      },
+      {
+        "text": "for people who hate apps",
+        "short": "People who hate apps",
+        "money": {
+          "t": "Good luck",
+          "n": "they won't download it"
+        },
+        "firstUsers": "Honestly, try a paper flyer.",
+        "w": -2
+      }
+    ],
+    "twist": [
+      {
+        "text": "with real-time collaboration",
+        "short": "Real-time collaboration",
+        "tag": "realtime",
+        "money": {
+          "t": "Team plan",
+          "n": "pay per shared space"
+        },
+        "w": 1
+      },
+      {
+        "text": "that works fully offline",
+        "short": "Works offline",
+        "tag": "offline",
+        "money": {
+          "t": "Pro sync",
+          "n": "paid cloud backup"
+        },
+        "w": 1
+      },
+      {
+        "text": "as a PWA with no app store",
+        "short": "PWA, no app store",
+        "tag": "pwa",
+        "money": {
+          "t": "No store cut",
+          "n": "keep all of your payments"
+        },
+        "w": 1
+      },
+      {
+        "text": "with AI that fills in the boring parts",
+        "short": "AI does the boring parts",
+        "tag": "ai",
+        "money": {
+          "t": "AI credits",
+          "n": "free quota, then paid"
+        },
+        "w": 0
+      },
+      {
+        "text": "with a WhatsApp bot instead of an app",
+        "short": "Lives in WhatsApp",
+        "tag": "whatsapp",
+        "money": {
+          "t": "Per-message pricing",
+          "n": "pass on the bot costs"
+        },
+        "w": 1
+      },
+      {
+        "text": "that only opens once a day",
+        "short": "Opens once a day",
+        "tag": "once",
+        "money": {
+          "t": "Extra opens",
+          "n": "pay to peek again"
+        },
+        "w": -1
+      },
+      {
+        "text": "with a map at its heart",
+        "short": "Map-first",
+        "tag": "map",
+        "money": {
+          "t": "Promoted pins",
+          "n": "local businesses pay"
+        },
+        "w": 0
+      },
+      {
+        "text": "with streaks and badges",
+        "short": "Streaks and badges",
+        "tag": "streaks",
+        "money": {
+          "t": "Streak freezes",
+          "n": "pay to protect a streak"
+        },
+        "w": 0
+      },
+      {
+        "text": "that needs no sign-up",
+        "short": "No sign-up",
+        "tag": "nosignup",
+        "money": {
+          "t": "Paid accounts",
+          "n": "sign up to keep things forever"
+        },
+        "w": 1
+      },
+      {
+        "text": "with voice notes instead of typing",
+        "short": "Voice notes only",
+        "tag": "voice",
+        "money": {
+          "t": "Transcription minutes",
+          "n": "free allotment, then paid"
+        },
+        "w": 0
+      },
+      {
+        "text": "where every post costs one rupee",
+        "short": "₹1 per post",
+        "tag": "paypost",
+        "money": {
+          "t": "Pay per post",
+          "n": "the twist is the business"
+        },
+        "w": -1
+      },
+      {
+        "text": "that turns everything into a leaderboard",
+        "short": "All leaderboards",
+        "tag": "leaderboard",
+        "money": {
+          "t": "League passes",
+          "n": "paid private leagues"
+        },
+        "w": -2
+      }
+    ]
+  },
+  "money": {
+    "byTag": {
+      "productivity": [
+        {
+          "t": "Freemium",
+          "n": "paid teams and integrations"
+        },
+        {
+          "t": "Pro plan",
+          "n": "a few dollars a month"
+        }
+      ],
+      "social": [
+        {
+          "t": "Premium profiles",
+          "n": "custom themes and badges"
+        },
+        {
+          "t": "Ads",
+          "n": "only after real traction"
+        }
+      ],
+      "marketplace": [
+        {
+          "t": "Booking fee",
+          "n": "a cut of every rental"
+        },
+        {
+          "t": "Protection add-on",
+          "n": "optional damage cover"
+        }
+      ],
+      "health": [
+        {
+          "t": "Premium insights",
+          "n": "small monthly fee"
+        },
+        {
+          "t": "Coach plans",
+          "n": "coaches pay to follow clients"
+        }
+      ],
+      "learning": [
+        {
+          "t": "Freemium",
+          "n": "paid decks and stats"
+        },
+        {
+          "t": "School licenses",
+          "n": "per class"
+        }
+      ],
+      "money": [
+        {
+          "t": "Pro features",
+          "n": "receipts, exports, multi-currency"
+        },
+        {
+          "t": "Family plan",
+          "n": "one price for the household"
+        }
+      ],
+      "community": [
+        {
+          "t": "Ticket fee",
+          "n": "a small cut of paid tickets"
+        },
+        {
+          "t": "Organizer plan",
+          "n": "branding and analytics"
+        }
+      ],
+      "creator": [
+        {
+          "t": "Pro page",
+          "n": "custom domain and analytics"
+        },
+        {
+          "t": "Payments cut",
+          "n": "a small fee on tips and sales"
+        }
+      ]
+    }
+  },
+  "build": {
+    "byTag": {
+      "productivity": [
+        "Sign-in and one shared list with real-time sync",
+        "Push or email reminders",
+        "Offline-first so it works on the train"
+      ],
+      "social": [
+        "Profiles, a feed and follows",
+        "Image upload with compression",
+        "Report and block from day one"
+      ],
+      "marketplace": [
+        "Listings with photos, price and an availability calendar",
+        "Booking requests and in-app chat",
+        "Payments with a platform fee and deposits"
+      ],
+      "health": [
+        "A one-tap daily check-in",
+        "Streaks and gentle reminders",
+        "A weekly progress chart"
+      ],
+      "learning": [
+        "Create or import content",
+        "Spaced repetition or matching logic",
+        "Progress stats that bring people back"
+      ],
+      "money": [
+        "Add an expense in under five seconds",
+        "Categories and a monthly summary",
+        "CSV export and privacy you can explain"
+      ],
+      "community": [
+        "Event page with RSVP",
+        "Reminders and a waitlist",
+        "Organizer dashboard with headcount"
+      ],
+      "creator": [
+        "A page builder with a few blocks",
+        "Link click analytics",
+        "Tips or payments via Stripe or Razorpay"
+      ]
+    }
+  },
+  "daily": [
+    {
+      "id": "flat-grocery-list",
+      "title": "Shared grocery list for flatmates",
+      "pitch": "One live list for the whole flat, with who-bought-what and a quick split at month end.",
+      "problem": "Flatmates buy duplicates, forget essentials and argue about who paid.",
+      "whoPays": "Flatmates on a freemium plan; co-living operators for a branded version.",
+      "pricing": "Free for one flat; $2 per month for receipts and the monthly split.",
+      "mvp": [
+        "Real-time shared list",
+        "Tick items off and add prices",
+        "Monthly who-owes-what summary",
+        "Invite by link"
+      ],
+      "firstUsers": "Use it in your own flat and two friends' flats, then post in hostel groups.",
+      "difficulty": 1,
+      "tags": [
+        "Mobile",
+        "Students"
+      ],
+      "stack": "Expo (React Native) with Supabase for auth and real-time sync"
+    },
+    {
+      "id": "study-room-finder",
+      "title": "Study room finder for campus",
+      "pitch": "See which classrooms and library rooms are free right now and book a slot for your group.",
+      "problem": "Students wander the campus looking for an empty room to study in together.",
+      "whoPays": "Colleges, as a campus license; free for students.",
+      "pricing": "$99 per month per campus.",
+      "mvp": [
+        "Import the timetable to know which rooms are free",
+        "Live list or map of free rooms",
+        "Group booking with QR check-in",
+        "Admin view for facilities staff"
+      ],
+      "firstUsers": "Build it for your own college from its public timetable and share it in batch groups.",
+      "difficulty": 2,
+      "tags": [
+        "Web app",
+        "Students"
+      ],
+      "stack": "Next.js with Supabase (Postgres), installable as a PWA"
+    },
+    {
+      "id": "pet-care-log",
+      "title": "Pet care log shared by the family",
+      "pitch": "Everyone in the house logs walks, meals and medicine, so the pet is never double-fed or forgotten.",
+      "problem": "Families text each other 'did anyone feed the dog?' every single day.",
+      "whoPays": "Pet-owning families; pet sitters on a pro plan.",
+      "pricing": "Free for one pet; $3 per month for more pets and vet records.",
+      "mvp": [
+        "One-tap logs for walks, meals and meds",
+        "Shared household timeline",
+        "Reminders",
+        "Vet visit notes"
+      ],
+      "firstUsers": "Put QR posters up in two vet clinics and a pet store near you.",
+      "difficulty": 1,
+      "tags": [
+        "Mobile",
+        "Family"
+      ],
+      "stack": "Flutter with Firebase"
+    },
+    {
+      "id": "tutor-booking",
+      "title": "Booking page for home tutors",
+      "pitch": "Tutors share one link where parents book slots, pay and get reminders.",
+      "problem": "Home tutors manage bookings over calls and chase payments at the end of every month.",
+      "whoPays": "Independent tutors and music teachers.",
+      "pricing": "$8 per month per tutor.",
+      "mvp": [
+        "Availability calendar",
+        "Parent booking with payment",
+        "Reminders by WhatsApp or email",
+        "Monthly earnings summary"
+      ],
+      "firstUsers": "Set it up for five tutors you know and ask each to pass it to one colleague.",
+      "difficulty": 2,
+      "tags": [
+        "Web app",
+        "Small business"
+      ],
+      "stack": "Next.js with Postgres and Stripe or Razorpay"
+    },
+    {
+      "id": "run-club-routes",
+      "title": "Run club app with weekly routes",
+      "pitch": "Organizers post the weekly route and meetup point; members RSVP and see who's coming.",
+      "problem": "Run clubs coordinate in huge WhatsApp groups where the route gets buried.",
+      "whoPays": "Run club organizers; clubs pay for branding and member management.",
+      "pricing": "Free for 20 members; $9 per month per club.",
+      "mvp": [
+        "Post a route on a map",
+        "RSVP and headcount",
+        "Pace groups",
+        "Weekly reminder"
+      ],
+      "firstUsers": "Join a weekend run club and offer to run their next three meetups on it.",
+      "difficulty": 2,
+      "tags": [
+        "Mobile",
+        "Community"
+      ],
+      "stack": "Expo with Mapbox and Supabase"
+    },
+    {
+      "id": "receipt-scanner",
+      "title": "Receipt scanner for freelancers' taxes",
+      "pitch": "Snap receipts, auto-fill amount and category, and export a tidy report at tax time.",
+      "problem": "Freelancers lose receipts and spend a stressful week rebuilding their expenses.",
+      "whoPays": "Freelancers and small business owners.",
+      "pricing": "Free for 20 receipts a month; $5 per month unlimited.",
+      "mvp": [
+        "Camera capture with text extraction",
+        "Automatic category and amount",
+        "Monthly summary",
+        "CSV and PDF export"
+      ],
+      "firstUsers": "Offer a free year to freelancers in two online communities before tax season.",
+      "difficulty": 2,
+      "tags": [
+        "Mobile",
+        "Freelancers"
+      ],
+      "stack": "Flutter or Expo with an OCR API and Postgres"
+    },
+    {
+      "id": "walk-in-queue",
+      "title": "Walk-in queue for salons and small clinics",
+      "pitch": "Customers scan a QR code to join the queue and get a message when it's their turn.",
+      "problem": "Customers wait in crowded rooms with no idea how long it will take.",
+      "whoPays": "Salons, small clinics and repair shops.",
+      "pricing": "$12 per month per location.",
+      "mvp": [
+        "QR code to join the queue",
+        "Live position page",
+        "SMS or WhatsApp when it's your turn",
+        "Staff view to call the next person"
+      ],
+      "firstUsers": "Set it up for free at a salon near campus and count how many walk-outs it saves.",
+      "difficulty": 1,
+      "tags": [
+        "Web app",
+        "Small business"
+      ],
+      "stack": "SvelteKit or Next.js with Postgres and an SMS API"
+    },
+    {
+      "id": "wedding-photo-drop",
+      "title": "Wedding photo drop for guests",
+      "pitch": "Guests scan a QR code at the venue and add their photos to one shared album, no app needed.",
+      "problem": "The best candid photos stay stuck on guests' phones after the wedding.",
+      "whoPays": "Couples, per wedding; photographers resell it as an add-on.",
+      "pricing": "$29 per event.",
+      "mvp": [
+        "QR code per event",
+        "Upload from the browser with no sign-up",
+        "Live slideshow for the venue screen",
+        "Download everything as a zip"
+      ],
+      "firstUsers": "Offer it free at a friend's wedding and hand out cards to other guests.",
+      "difficulty": 1,
+      "tags": [
+        "Web app",
+        "Events"
+      ],
+      "stack": "Next.js with S3-compatible storage such as Cloudflare R2"
+    },
+    {
+      "id": "habit-for-two",
+      "title": "Habit tracker for two",
+      "pitch": "Pair up with one friend on one habit and see each other's daily check-ins.",
+      "problem": "Solo habit apps get abandoned; accountability with one friend works far better.",
+      "whoPays": "Consumers on a freemium plan.",
+      "pricing": "Free for one pair; $2 per month for more habits and stats.",
+      "mvp": [
+        "Invite a partner by link",
+        "Daily check-in for both",
+        "Streaks and nudges",
+        "Weekly recap"
+      ],
+      "firstUsers": "Launch it with a 30-day challenge in your college's gym or coding club.",
+      "difficulty": 1,
+      "tags": [
+        "Mobile",
+        "Habits"
+      ],
+      "stack": "Expo with Supabase and push notifications"
+    },
+    {
+      "id": "canteen-ordering",
+      "title": "Order-ahead app for college canteens",
+      "pitch": "Students order from the canteen on their phone and pick up when it's ready.",
+      "problem": "Canteen queues eat half the lunch break.",
+      "whoPays": "Canteen operators; colleges for a campus license.",
+      "pricing": "A small fee per order.",
+      "mvp": [
+        "Menu with live availability",
+        "Order and pay online",
+        "Ready-for-pickup notification",
+        "Kitchen screen with the order queue"
+      ],
+      "firstUsers": "Pilot it with one canteen for a week and measure the queue time before and after.",
+      "difficulty": 2,
+      "tags": [
+        "Web app",
+        "Students"
+      ],
+      "stack": "Next.js PWA with Postgres and a payment gateway"
+    },
+    {
+      "id": "tool-library",
+      "title": "Neighborhood tool library",
+      "pitch": "Neighbors list tools they rarely use and lend them with a simple request-and-return flow.",
+      "problem": "Everyone owns a drill they use twice a year, and the neighbor buys another one.",
+      "whoPays": "Residents' associations and housing societies.",
+      "pricing": "$20 per month per society.",
+      "mvp": [
+        "List items with photos",
+        "Request, approve and return flow",
+        "Due-date reminders",
+        "Trust score from past returns"
+      ],
+      "firstUsers": "Start in your own building's group chat with ten items from friends.",
+      "difficulty": 2,
+      "tags": [
+        "Web app",
+        "Community"
+      ],
+      "stack": "Django or Rails with Postgres, as a mobile-friendly web app"
+    },
+    {
+      "id": "practice-log",
+      "title": "Practice log for music students",
+      "pitch": "Students log practice with a timer and short recordings; teachers see progress before each lesson.",
+      "problem": "Music teachers can't tell whether students practiced, and students lose motivation.",
+      "whoPays": "Music teachers and small music schools.",
+      "pricing": "$6 per month per teacher.",
+      "mvp": [
+        "Practice timer with notes",
+        "Record a short clip",
+        "Teacher dashboard per student",
+        "Weekly progress summary"
+      ],
+      "firstUsers": "Offer it to three music teachers and their students for a free term.",
+      "difficulty": 2,
+      "tags": [
+        "Mobile",
+        "Education"
+      ],
+      "stack": "Expo with Supabase storage for recordings"
+    }
+  ]
+}

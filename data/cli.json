@@ -1,0 +1,737 @@
+{
+  "version": 1,
+  "updated": "2026-09-24T00:00:00Z",
+  "config": {
+    "repo": ""
+  },
+  "page": {
+    "reels": [
+      {
+        "label": "Tool",
+        "sub": "(what it does)",
+        "icon": "terminal"
+      },
+      {
+        "label": "Users",
+        "sub": "(for whom)",
+        "icon": "people"
+      },
+      {
+        "label": "Twist",
+        "sub": "(the catch)",
+        "icon": "sparkle"
+      }
+    ],
+    "daily": "Project of the day",
+    "noun": "project",
+    "who": "Who it's for",
+    "example": [
+      "Git helper",
+      "Students",
+      "Fully offline"
+    ],
+    "stack": "Go or Rust for a single fast binary, or Python with Typer if you want it done this weekend. Publish on Homebrew, npm or PyPI."
+  },
+  "reels": {
+    "business": [
+      {
+        "text": "a git helper",
+        "short": "Git helper",
+        "tag": "devflow",
+        "w": 1
+      },
+      {
+        "text": "a file organizer",
+        "short": "File organizer",
+        "tag": "files",
+        "w": 1
+      },
+      {
+        "text": "a CSV wrangler",
+        "short": "CSV wrangler",
+        "tag": "data",
+        "w": 1
+      },
+      {
+        "text": "a terminal dashboard",
+        "short": "Terminal dashboard",
+        "tag": "tui",
+        "w": 0
+      },
+      {
+        "text": "an AI commit-message writer",
+        "short": "AI commit writer",
+        "tag": "ai",
+        "w": 0
+      },
+      {
+        "text": "a deploy script generator",
+        "short": "Deploy scaffolder",
+        "tag": "ops",
+        "w": 0
+      },
+      {
+        "text": "a Markdown notes tool",
+        "short": "Markdown notes tool",
+        "tag": "notes",
+        "w": 1
+      },
+      {
+        "text": "an image batch processor",
+        "short": "Image batch processor",
+        "tag": "media",
+        "w": 1
+      },
+      {
+        "text": "an API tester",
+        "short": "API tester",
+        "tag": "devflow",
+        "w": 1
+      },
+      {
+        "text": "a log explorer",
+        "short": "Log explorer",
+        "tag": "ops",
+        "w": 1
+      },
+      {
+        "text": "a to-do list",
+        "short": "To-do list",
+        "tag": "notes",
+        "w": -1
+      },
+      {
+        "text": "a crypto price ticker",
+        "short": "Crypto price ticker",
+        "tag": "tui",
+        "w": -2
+      }
+    ],
+    "audience": [
+      {
+        "text": "for students",
+        "short": "Students",
+        "money": {
+          "t": "Free for students",
+          "n": "paid once they graduate"
+        },
+        "firstUsers": "Share it in your college's coding club and hackathon Discord.",
+        "w": 1
+      },
+      {
+        "text": "for data scientists",
+        "short": "Data scientists",
+        "money": {
+          "t": "Team license",
+          "n": "companies pay for the whole data team"
+        },
+        "firstUsers": "Post a demo notebook in data science forums and Kaggle discussions.",
+        "w": 1
+      },
+      {
+        "text": "for DevOps engineers",
+        "short": "DevOps engineers",
+        "money": {
+          "t": "Enterprise support",
+          "n": "SLAs for big teams"
+        },
+        "firstUsers": "Share a short demo GIF on r/devops and as a Show HN post.",
+        "w": 1
+      },
+      {
+        "text": "for open-source maintainers",
+        "short": "OSS maintainers",
+        "money": {
+          "t": "Sponsors",
+          "n": "maintainers promote tools that save them time"
+        },
+        "firstUsers": "Open genuinely helpful pull requests on a few big repos that could use it.",
+        "w": 0
+      },
+      {
+        "text": "for writers using Markdown",
+        "short": "Markdown writers",
+        "money": {
+          "t": "Sync subscription",
+          "n": "notes on every device"
+        },
+        "firstUsers": "Post in writing and note-taking communities like r/ObsidianMD.",
+        "w": 0
+      },
+      {
+        "text": "for Kubernetes users",
+        "short": "Kubernetes users",
+        "money": {
+          "t": "Paid add-ons",
+          "n": "multi-cluster views"
+        },
+        "firstUsers": "Share it in the Kubernetes Slack and r/kubernetes.",
+        "w": 0
+      },
+      {
+        "text": "for photographers",
+        "short": "Photographers",
+        "money": {
+          "t": "Preset packs",
+          "n": "sold per style"
+        },
+        "firstUsers": "Show before-and-after results in photography communities.",
+        "w": 0
+      },
+      {
+        "text": "for sysadmins",
+        "short": "Sysadmins",
+        "money": {
+          "t": "Support plan",
+          "n": "paid by IT departments"
+        },
+        "firstUsers": "Post on r/sysadmin with a real time-saving story.",
+        "w": 0
+      },
+      {
+        "text": "for API developers",
+        "short": "API developers",
+        "money": {
+          "t": "Team workspaces",
+          "n": "shared request collections"
+        },
+        "firstUsers": "Write a dev.to post comparing it with curl scripts.",
+        "w": 1
+      },
+      {
+        "text": "for homelab owners",
+        "short": "Homelab owners",
+        "money": {
+          "t": "Donations",
+          "n": "homelabbers love supporting tools"
+        },
+        "firstUsers": "Post your setup on r/homelab and r/selfhosted.",
+        "w": -1
+      },
+      {
+        "text": "for game modders",
+        "short": "Game modders",
+        "money": {
+          "t": "Patreon",
+          "n": "mod communities fund their tools"
+        },
+        "firstUsers": "Share it on the modding Discord of one popular game.",
+        "w": -1
+      },
+      {
+        "text": "for Linux beginners",
+        "short": "Linux beginners",
+        "money": {
+          "t": "Course bundle",
+          "n": "sell a short course alongside it"
+        },
+        "firstUsers": "Post in r/linux4noobs with a friendly getting-started guide.",
+        "w": 0
+      }
+    ],
+    "twist": [
+      {
+        "text": "that runs fully offline",
+        "short": "Fully offline",
+        "tag": "offline",
+        "money": {
+          "t": "Offline pro license",
+          "n": "air-gapped companies pay"
+        },
+        "w": 1
+      },
+      {
+        "text": "written in Rust with zero dependencies",
+        "short": "Rust, zero deps",
+        "tag": "rust",
+        "money": {
+          "t": "Sponsors",
+          "n": "speed fans fund Rust tools"
+        },
+        "w": 0
+      },
+      {
+        "text": "with a full-screen TUI",
+        "short": "Full-screen TUI",
+        "tag": "tui",
+        "money": {
+          "t": "Premium themes",
+          "n": "paid color schemes"
+        },
+        "w": 0
+      },
+      {
+        "text": "that explains every step with AI",
+        "short": "AI explains every step",
+        "tag": "ai",
+        "money": {
+          "t": "Hosted AI tier",
+          "n": "no API key needed"
+        },
+        "w": 0
+      },
+      {
+        "text": "configured by a single TOML file",
+        "short": "One TOML config",
+        "tag": "config",
+        "money": {
+          "t": "Config templates",
+          "n": "sell ready-made setups"
+        },
+        "w": 1
+      },
+      {
+        "text": "that works over SSH",
+        "short": "Works over SSH",
+        "tag": "ssh",
+        "money": {
+          "t": "Team license",
+          "n": "for fleets of servers"
+        },
+        "w": 1
+      },
+      {
+        "text": "with undo for every action",
+        "short": "Undo everything",
+        "tag": "undo",
+        "money": {
+          "t": "Pro history",
+          "n": "longer undo history for teams"
+        },
+        "w": 1
+      },
+      {
+        "text": "that ships as one tiny binary",
+        "short": "One tiny binary",
+        "tag": "binary",
+        "money": {
+          "t": "Enterprise builds",
+          "n": "signed binaries for companies"
+        },
+        "w": 1
+      },
+      {
+        "text": "that plugs into git hooks",
+        "short": "Runs in git hooks",
+        "tag": "hooks",
+        "money": {
+          "t": "Hosted CI checks",
+          "n": "paid per repo"
+        },
+        "w": 0
+      },
+      {
+        "text": "with a leaderboard of your commands",
+        "short": "Command leaderboard",
+        "tag": "leaderboard",
+        "money": {
+          "t": "Team leaderboards",
+          "n": "companies pay for bragging rights"
+        },
+        "w": -1
+      },
+      {
+        "text": "that speaks only in pirate",
+        "short": "Speaks in pirate",
+        "tag": "pirate",
+        "money": {
+          "t": "Merch",
+          "n": "stickers, obviously"
+        },
+        "w": -2
+      },
+      {
+        "text": "that only works on Tuesdays",
+        "short": "Only on Tuesdays",
+        "tag": "tuesday",
+        "money": {
+          "t": "Weekday pass",
+          "n": "pay to unlock the other six"
+        },
+        "w": -2
+      }
+    ]
+  },
+  "money": {
+    "byTag": {
+      "devflow": [
+        {
+          "t": "GitHub Sponsors",
+          "n": "from teams who rely on it"
+        },
+        {
+          "t": "Pro license",
+          "n": "team features, per seat per year"
+        }
+      ],
+      "files": [
+        {
+          "t": "One-time license",
+          "n": "for the rules and GUI extras"
+        },
+        {
+          "t": "Tip jar",
+          "n": "sponsors link in the README"
+        }
+      ],
+      "data": [
+        {
+          "t": "Pro version",
+          "n": "big-file mode and Excel export"
+        },
+        {
+          "t": "Consulting",
+          "n": "paid help for data teams"
+        }
+      ],
+      "tui": [
+        {
+          "t": "Premium themes",
+          "n": "paid color schemes"
+        },
+        {
+          "t": "Sponsors",
+          "n": "featured in the README"
+        }
+      ],
+      "ai": [
+        {
+          "t": "Bring your own key",
+          "n": "free; users pay their own API bill"
+        },
+        {
+          "t": "Hosted tier",
+          "n": "monthly, no API key needed"
+        }
+      ],
+      "ops": [
+        {
+          "t": "Hosted dashboard",
+          "n": "managed version for teams"
+        },
+        {
+          "t": "Support plan",
+          "n": "paid SLA for companies"
+        }
+      ],
+      "notes": [
+        {
+          "t": "Sync add-on",
+          "n": "encrypted sync, monthly"
+        },
+        {
+          "t": "Sponsors",
+          "n": "support from power users"
+        }
+      ],
+      "media": [
+        {
+          "t": "Preset packs",
+          "n": "paid presets per style"
+        },
+        {
+          "t": "Hosted API",
+          "n": "pay-per-use batch processing"
+        }
+      ]
+    }
+  },
+  "build": {
+    "byTag": {
+      "devflow": [
+        "One command that does the core job, with --help that reads like docs",
+        "A config file with sensible defaults",
+        "Install via Homebrew, npm or a single binary"
+      ],
+      "files": [
+        "A dry-run mode that shows what would change",
+        "A rules file for where things go",
+        "An undo log so nothing is ever lost"
+      ],
+      "data": [
+        "Read CSV or JSON from stdin or a file",
+        "A few focused commands: filter, join, summarize",
+        "Stream big files instead of loading them into memory"
+      ],
+      "tui": [
+        "One screen with keyboard shortcuts",
+        "A refresh loop that stays light on CPU",
+        "Themes and a --no-color flag"
+      ],
+      "ai": [
+        "Bring-your-own-API-key setup on first run",
+        "A preview step before anything is written",
+        "A useful fallback when there's no key"
+      ],
+      "ops": [
+        "Read-only by default; --apply to change things",
+        "Clear colored output with a summary at the end",
+        "CI-friendly exit codes and JSON output"
+      ],
+      "notes": [
+        "Plain Markdown files in a folder you choose",
+        "Fast fuzzy search",
+        "Git-friendly: no database, no lock-in"
+      ],
+      "media": [
+        "Process a whole folder with one command",
+        "Presets for common sizes and formats",
+        "A progress bar and parallel workers"
+      ]
+    }
+  },
+  "daily": [
+    {
+      "id": "stale-branch-cleaner",
+      "title": "Stale branch cleaner for git",
+      "pitch": "Finds merged and abandoned branches, lists them, and deletes the ones you tick.",
+      "problem": "Repos pile up hundreds of old branches and nobody knows which are safe to delete.",
+      "whoPays": "Developers on busy repos; teams for a shared cleanup policy.",
+      "pricing": "Free and open source; $29 per seat per year for team policies.",
+      "mvp": [
+        "List branches merged into main or untouched for 30+ days",
+        "Interactive checklist to pick what to delete",
+        "Dry run, plus undo from a saved list",
+        "Works on local and remote branches"
+      ],
+      "firstUsers": "Post a before-and-after screenshot as a Show HN and on r/git.",
+      "difficulty": 1,
+      "tags": [
+        "Git",
+        "Dev tools"
+      ],
+      "stack": "Go with Cobra and go-git, shipped as a single binary"
+    },
+    {
+      "id": "downloads-organizer",
+      "title": "Screenshot and downloads organizer",
+      "pitch": "Sorts downloads into dated folders and renames screenshots from the text inside them.",
+      "problem": "Downloads and Desktop turn into a graveyard of 'Screenshot 2026-…' files nobody can find.",
+      "whoPays": "Anyone with a messy laptop; power users pay for custom rules.",
+      "pricing": "Free; $12 one-time for custom rules and smart renaming.",
+      "mvp": [
+        "Watch a folder and move files by type and date",
+        "Rename screenshots using text found in them",
+        "Rules file for custom sorting",
+        "Undo log"
+      ],
+      "firstUsers": "Share a 20-second before-and-after clip on X and r/productivity.",
+      "difficulty": 1,
+      "tags": [
+        "Files",
+        "Productivity"
+      ],
+      "stack": "Python with watchdog and Tesseract OCR"
+    },
+    {
+      "id": "csv-diff",
+      "title": "Compare two CSV files row by row",
+      "pitch": "Shows exactly which rows were added, removed or changed between two exports.",
+      "problem": "Comparing spreadsheet exports by eye is slow, and plain diff is useless when row order changes.",
+      "whoPays": "Analysts and developers; data teams for large-file mode.",
+      "pricing": "Free; $49 per year for files over 1 GB.",
+      "mvp": [
+        "Match rows by a key column",
+        "Colored summary of added, removed and changed rows",
+        "HTML report or JSON output",
+        "Stream files larger than memory"
+      ],
+      "firstUsers": "Answer Stack Overflow questions about comparing CSVs and mention it where it genuinely helps.",
+      "difficulty": 2,
+      "tags": [
+        "Data",
+        "Dev tools"
+      ],
+      "stack": "Rust with the csv crate, or Python with Polars"
+    },
+    {
+      "id": "side-project-dashboard",
+      "title": "Terminal dashboard for your side projects",
+      "pitch": "One screen with each project's uptime, open issues, latest deploy and stars.",
+      "problem": "Makers juggle five browser tabs just to check their side projects are alive.",
+      "whoPays": "Indie hackers running several small projects.",
+      "pricing": "Free; $4 per month for alerts and more than three projects.",
+      "mvp": [
+        "Config file listing projects and their URLs",
+        "Uptime ping and GitHub stats",
+        "Keyboard navigation between panels",
+        "Refresh every minute with low CPU"
+      ],
+      "firstUsers": "Share a screenshot in indie hacker communities; good-looking dashboards travel.",
+      "difficulty": 2,
+      "tags": [
+        "TUI",
+        "Indie hackers"
+      ],
+      "stack": "Go with Bubble Tea, or Python with Textual"
+    },
+    {
+      "id": "ai-commit-messages",
+      "title": "AI commit messages from your staged diff",
+      "pitch": "Reads your staged changes and suggests a clear commit message you edit before committing.",
+      "problem": "Commit histories fill up with 'fix' and 'wip', which makes reviews and debugging harder.",
+      "whoPays": "Developers; teams pay for shared message conventions.",
+      "pricing": "Free with your own API key; $5 per month hosted.",
+      "mvp": [
+        "Read the staged diff",
+        "Suggest a message in your team's style",
+        "Edit before committing",
+        "One-command git hook install"
+      ],
+      "firstUsers": "Launch as a Show HN with a demo GIF and a clear note on what gets sent to the API.",
+      "difficulty": 1,
+      "tags": [
+        "AI",
+        "Git"
+      ],
+      "stack": "Node.js or Go, calling an LLM API with the user's key"
+    },
+    {
+      "id": "env-checker",
+      "title": "Env file checker",
+      "pitch": "Compares .env with .env.example and the code, and flags missing or unused variables before deploy.",
+      "problem": "Deploys break because someone forgot to add a new environment variable.",
+      "whoPays": "Developers; teams via a CI plan.",
+      "pricing": "Free; $10 per month for the CI check with Slack alerts.",
+      "mvp": [
+        "Parse .env, .env.example and references in code",
+        "Report missing, extra and empty variables",
+        "CI-friendly exit codes",
+        "Never print secret values"
+      ],
+      "firstUsers": "Add it to three open-source projects' CI through pull requests.",
+      "difficulty": 1,
+      "tags": [
+        "DevOps",
+        "Dev tools"
+      ],
+      "stack": "Node.js, published on npm"
+    },
+    {
+      "id": "terminal-notes",
+      "title": "Markdown notes from the terminal",
+      "pitch": "Create, search and link Markdown notes without leaving the terminal.",
+      "problem": "Developers want quick notes but not another heavy app or a database.",
+      "whoPays": "Developers and writers; sync is the paid add-on.",
+      "pricing": "Free; $3 per month for encrypted sync.",
+      "mvp": [
+        "New note from a template in one command",
+        "Fuzzy search across notes",
+        "Backlinks between notes",
+        "Plain files in a folder you pick"
+      ],
+      "firstUsers": "Share an asciinema recording in r/commandline and note-taking communities.",
+      "difficulty": 1,
+      "tags": [
+        "Notes",
+        "Productivity"
+      ],
+      "stack": "Rust or Go with a ripgrep-style search"
+    },
+    {
+      "id": "product-photo-batch",
+      "title": "Product photo batch resizer",
+      "pitch": "Resizes, compresses and watermarks a folder of product photos to each marketplace's rules.",
+      "problem": "Small sellers resize photos one at a time to meet every marketplace's size rules.",
+      "whoPays": "Online sellers and freelance photographers.",
+      "pricing": "Free; $15 one-time for marketplace presets and watermarks.",
+      "mvp": [
+        "Process a folder with one command",
+        "Presets for common marketplaces",
+        "Watermark and compress",
+        "Parallel processing with a progress bar"
+      ],
+      "firstUsers": "Help five sellers in online seller groups batch their catalog for free.",
+      "difficulty": 1,
+      "tags": [
+        "Media",
+        "Small business"
+      ],
+      "stack": "Python with Pillow, or Go with the imaging package"
+    },
+    {
+      "id": "http-files",
+      "title": "API requests as plain files in your repo",
+      "pitch": "Keep API requests as readable files next to your code and run them from the terminal.",
+      "problem": "API collections live in heavy desktop apps that don't fit into git or code review.",
+      "whoPays": "Backend developers; teams for shared environments.",
+      "pricing": "Free; $6 per seat per month for team environments.",
+      "mvp": [
+        "Request files with variables",
+        "Run one request or all of them",
+        "Pretty responses with timing",
+        "Environments for dev and production"
+      ],
+      "firstUsers": "Write a post on keeping API collections in git and share it on dev.to.",
+      "difficulty": 2,
+      "tags": [
+        "APIs",
+        "Dev tools"
+      ],
+      "stack": "Go or Rust with a simple .http file format"
+    },
+    {
+      "id": "log-explorer",
+      "title": "Log explorer with instant filters",
+      "pitch": "Tail and filter JSON logs from files or kubectl in a fast, searchable view.",
+      "problem": "Reading JSON logs in a raw terminal is painful, and grep only gets you halfway.",
+      "whoPays": "Backend and DevOps engineers.",
+      "pricing": "Free; $8 per month for saved queries and team sharing.",
+      "mvp": [
+        "Read from files, stdin or kubectl logs",
+        "Filter by level, field and text",
+        "Pretty-print JSON lines",
+        "Follow mode"
+      ],
+      "firstUsers": "Post a demo in r/devops and the Kubernetes Slack.",
+      "difficulty": 2,
+      "tags": [
+        "DevOps",
+        "TUI"
+      ],
+      "stack": "Go with Bubble Tea"
+    },
+    {
+      "id": "assignment-checker",
+      "title": "Assignment submission checker",
+      "pitch": "Checks your project folder against the assignment rules before you submit: files, names, tests and size.",
+      "problem": "Students lose marks for wrong file names, missing files or code that won't build on the grader's machine.",
+      "whoPays": "Free for students; teaching assistants pay for rule packs.",
+      "pricing": "Free for students; $19 per course for TA rule packs.",
+      "mvp": [
+        "Rules file from the TA: required files, names, size",
+        "Run the tests locally",
+        "Clear pass or fail report",
+        "Zip the folder the right way"
+      ],
+      "firstUsers": "Ask one TA in your department to write a rules file for the next assignment.",
+      "difficulty": 1,
+      "tags": [
+        "Students",
+        "Education"
+      ],
+      "stack": "Python, installable with pipx"
+    },
+    {
+      "id": "dependency-summaries",
+      "title": "Dependency update summarizer",
+      "pitch": "Lists outdated packages with a plain-English summary of what changed and what might break.",
+      "problem": "Developers put off updates because reading every changelog takes too long.",
+      "whoPays": "Developers and small teams.",
+      "pricing": "Free for public repos; $9 per month for private ones.",
+      "mvp": [
+        "Detect outdated npm and pip packages",
+        "Fetch and summarize changelogs",
+        "Flag breaking changes",
+        "Markdown report ready for a pull request"
+      ],
+      "firstUsers": "Run it on 20 popular open-source repos and share the most useful summaries.",
+      "difficulty": 2,
+      "tags": [
+        "Dev tools",
+        "AI"
+      ],
+      "stack": "TypeScript, with an LLM API for the summaries"
+    }
+  ]
+}

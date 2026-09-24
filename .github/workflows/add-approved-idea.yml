@@ -1,0 +1,58 @@
+name: Add approved idea
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  add:
+    if: github.event.label.name == 'approved'
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Turn the issue into an idea
+        id: add
+        run: node scripts/add-submission.mjs
+      - name: Check the data files
+        if: steps.add.outputs.ok == 'true'
+        run: node scripts/validate.mjs
+      - name: Commit
+        id: commit
+        if: steps.add.outputs.ok == 'true'
+        env:
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          if git diff --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Add community idea from #$NUMBER"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Reply on the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+          MESSAGE: ${{ steps.add.outputs.message }}
+          OK: ${{ steps.add.outputs.ok }}
+        run: |
+          gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body "$MESSAGE"
+          if [ "$OK" = "true" ]; then gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY"; fi
+
+  deploy:
+    needs: add
+    if: needs.add.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy.yml

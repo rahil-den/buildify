@@ -1,0 +1,78 @@
+name: Suggest an idea, project or app of the day
+description: Something specific that one to three people could build and ship.
+title: "Suggestion: "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keep it specific and small: something one to three people could ship in a few weekends. Every suggestion is reviewed, and approved ones get their own day on the site.
+  - type: dropdown
+    id: page
+    attributes:
+      label: Which page is it for?
+      options:
+        - Startup ideas (home page)
+        - CLI projects
+        - Web & mobile apps
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Title
+      placeholder: Shift-swap board for hospital wards
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: One-line pitch
+      placeholder: Nurses post and claim open shifts in two taps, and the manager approves from their phone.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What problem does it solve?
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Who is it for, and who pays?
+      placeholder: Ward managers and small private hospitals
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Pricing idea
+      placeholder: $3 per nurse per month, or free and open source with sponsors
+  - type: input
+    attributes:
+      label: Suggested tech stack
+      placeholder: Next.js + Supabase, or Go as a single binary
+  - type: textarea
+    attributes:
+      label: MVP features (one per line)
+      placeholder: |
+        Import the roster from a spreadsheet
+        Post a shift, claim a shift
+        One-tap manager approval
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: How would you get the first 10 users?
+  - type: dropdown
+    attributes:
+      label: How big is the build?
+      options:
+        - Weekend project
+        - A few weekends
+        - Serious build
+      default: 1
+  - type: input
+    attributes:
+      label: Tags (comma-separated)
+      placeholder: B2B, Healthcare ops
+  - type: input
+    attributes:
+      label: Credit me as
+      description: Name or @handle to show on the site. Leave it empty to use your GitHub username.
