@@ -26,968 +26,1006 @@
     "noun": "idea",
     "who": "Who pays",
     "example": [
-      "Marketplace",
-      "Your college",
-      "Disappears after 24 hours"
+      "Bounty board",
+      "First-gen students",
+      "Runs over SMS"
     ]
   },
   "reels": {
     "business": [
       {
-        "text": "a marketplace",
-        "short": "Marketplace",
-        "tag": "marketplace",
+        "text": "a reverse auction",
+        "short": "Reverse auction",
+        "tag": "auction",
         "w": 1
       },
       {
-        "text": "a subscription box",
-        "short": "Subscription box",
+        "text": "a bounty board",
+        "short": "Bounty board",
+        "tag": "bounty",
+        "w": 1
+      },
+      {
+        "text": "a WhatsApp bot",
+        "short": "WhatsApp bot",
+        "tag": "bot",
+        "w": 1
+      },
+      {
+        "text": "a matchmaking service",
+        "short": "Matchmaker",
+        "tag": "matchmaker",
+        "w": 1
+      },
+      {
+        "text": "a QR sticker",
+        "short": "QR sticker",
+        "tag": "sticker",
+        "w": 1
+      },
+      {
+        "text": "a Chrome extension",
+        "short": "Chrome extension",
+        "tag": "extension",
+        "w": 1
+      },
+      {
+        "text": "a subscription for one physical thing",
+        "short": "One-thing subscription",
         "tag": "subscription",
         "w": 0
       },
       {
-        "text": "an AI copilot",
-        "short": "AI copilot",
-        "tag": "ai",
-        "w": 1
-      },
-      {
-        "text": "a social app",
-        "short": "Social app",
-        "tag": "social",
+        "text": "a waitlist-only club",
+        "short": "Waitlist-only club",
+        "tag": "club",
         "w": 0
       },
       {
-        "text": "a dating app",
-        "short": "Dating app",
-        "tag": "dating",
+        "text": "a phone hotline",
+        "short": "Phone hotline",
+        "tag": "hotline",
+        "w": 0
+      },
+      {
+        "text": "a time capsule",
+        "short": "Time capsule",
+        "tag": "capsule",
+        "w": 0
+      },
+      {
+        "text": "a leaderboard",
+        "short": "Leaderboard",
+        "tag": "leaderboard",
         "w": -1
       },
       {
-        "text": "a Yelp-style directory",
-        "short": "Yelp-style directory",
-        "tag": "local",
-        "w": 1
+        "text": "a Tamagotchi",
+        "short": "Tamagotchi",
+        "tag": "pet",
+        "w": -1
       },
       {
-        "text": "a Duolingo-style trainer",
-        "short": "Duolingo-style trainer",
-        "tag": "education",
-        "w": 1
+        "text": "a vending machine",
+        "short": "Vending machine",
+        "tag": "hardware",
+        "w": -2
       },
       {
-        "text": "an Uber-style dispatcher",
-        "short": "Uber-style dispatch",
-        "tag": "marketplace",
-        "w": 0
-      },
-      {
-        "text": "a Discord-style community",
-        "short": "Discord-style community",
-        "tag": "social",
-        "w": 1
-      },
-      {
-        "text": "a LinkedIn-style network",
-        "short": "LinkedIn-style network",
-        "tag": "professional",
-        "w": 0
-      },
-      {
-        "text": "a Strava-style tracker",
-        "short": "Strava-style tracker",
-        "tag": "fitness",
-        "w": 0
-      },
-      {
-        "text": "a Robinhood-style app",
-        "short": "Robinhood-style app",
-        "tag": "fintech",
+        "text": "a reality show",
+        "short": "Reality show",
+        "tag": "show",
         "w": -2
       }
     ],
     "audience": [
       {
-        "text": "for your college",
-        "short": "Your college",
-        "money": {
-          "t": "Sponsored campus drops",
-          "n": "local brands pay to reach students"
-        },
-        "firstUsers": "Post in your college's clubs and WhatsApp groups; aim for 20 students in week one.",
-        "w": 1
-      },
-      {
-        "text": "for retirees",
-        "short": "Retirees",
-        "money": {
-          "t": "Family plans",
-          "n": "adult kids pay for their parents"
-        },
-        "firstUsers": "Partner with one community center or residents' association and run a hands-on demo.",
-        "w": 1
-      },
-      {
-        "text": "for dog owners",
-        "short": "Dog owners",
-        "money": {
-          "t": "Pet-brand sponsors",
-          "n": "treats, toys, vets"
-        },
-        "firstUsers": "Spend a weekend at the nearest dog park and pet stores; recruit 15 owners.",
-        "w": 0
-      },
-      {
-        "text": "for night-shift nurses",
-        "short": "Night-shift nurses",
-        "money": {
-          "t": "Hospital licenses",
-          "n": "sold to staffing teams"
-        },
-        "firstUsers": "Ask nurse friends to share it in their ward group; one ward is enough to start.",
-        "w": 1
-      },
-      {
-        "text": "for exchange students",
-        "short": "Exchange students",
+        "text": "for first-generation college students",
+        "short": "First-gen students",
         "money": {
           "t": "University partnerships",
-          "n": "paid by international offices"
+          "n": "colleges fund student-success tools"
         },
-        "firstUsers": "Contact your university's international office and the exchange-student society.",
-        "w": 0
-      },
-      {
-        "text": "for new parents",
-        "short": "New parents",
-        "money": {
-          "t": "Baby-brand affiliates",
-          "n": "commission on gear"
-        },
-        "firstUsers": "Join local parent groups and prenatal classes; offer it free to the first 30 families.",
+        "firstUsers": "Partner with one college's first-gen student society and run a launch session with them.",
         "w": 1
       },
       {
-        "text": "for gym regulars",
-        "short": "Gym regulars",
+        "text": "for people who just moved cities",
+        "short": "New in town",
         "money": {
-          "t": "Gym partnerships",
-          "n": "referral fee per sign-up"
+          "t": "Relocation perks",
+          "n": "employers pay for new-joiner onboarding"
         },
-        "firstUsers": "Pitch one gym owner: free for their members for a month in exchange for feedback.",
-        "w": 0
-      },
-      {
-        "text": "for remote teams",
-        "short": "Remote teams",
-        "money": {
-          "t": "Per-seat pricing",
-          "n": "companies pay per employee"
-        },
-        "firstUsers": "Message founders of 10 small remote startups on LinkedIn or X and offer a free pilot.",
+        "firstUsers": "Post in 'new to [your city]' groups on Reddit and Facebook.",
         "w": 1
       },
       {
-        "text": "for landlords",
-        "short": "Landlords",
+        "text": "for night-shift workers",
+        "short": "Night-shift workers",
         "money": {
-          "t": "Per-property fee",
-          "n": "monthly, per unit"
+          "t": "Employer plans",
+          "n": "hospitals and warehouses pay per worker"
         },
-        "firstUsers": "Find small landlords in local property groups and set up their first building for them.",
-        "w": -1
+        "firstUsers": "Hand out flyers at a hospital or warehouse gate during the 7 a.m. shift change.",
+        "w": 1
       },
       {
-        "text": "for substitute teachers",
-        "short": "Substitute teachers",
+        "text": "for hostel wardens",
+        "short": "Hostel wardens",
         "money": {
-          "t": "District licenses",
-          "n": "schools pay, teachers don't"
+          "t": "Per-hostel license",
+          "n": "monthly, per building"
         },
-        "firstUsers": "Talk to one school's admin office; that's usually who books substitutes.",
+        "firstUsers": "Visit three hostels near campus and set it up for one warden for free.",
+        "w": 1
+      },
+      {
+        "text": "for grandparents learning smartphones",
+        "short": "Grandparents online",
+        "money": {
+          "t": "Family plan",
+          "n": "the grandkids pay"
+        },
+        "firstUsers": "Run a free 'phone help' morning at a senior center.",
+        "w": 1
+      },
+      {
+        "text": "for thrift resellers",
+        "short": "Thrift resellers",
+        "money": {
+          "t": "Seller plan",
+          "n": "monthly, per shop"
+        },
+        "firstUsers": "Find resellers on Instagram and offer them a free month.",
+        "w": 1
+      },
+      {
+        "text": "for street food vendors",
+        "short": "Street food vendors",
+        "money": {
+          "t": "Tiny monthly fee",
+          "n": "priced below one plate a day"
+        },
+        "firstUsers": "Pick one busy food street and sign vendors up in person.",
         "w": 0
       },
       {
-        "text": "for plant owners",
-        "short": "Plant owners",
+        "text": "for wedding DJs",
+        "short": "Wedding DJs",
         "money": {
-          "t": "Nursery affiliates",
-          "n": "a cut of every plant sold"
+          "t": "Pro plan",
+          "n": "DJs pay to look professional"
         },
-        "firstUsers": "Partner with a local nursery and put a QR code on their plant tags.",
+        "firstUsers": "Message 30 wedding DJs on Instagram with a 60-second demo.",
+        "w": 0
+      },
+      {
+        "text": "for delivery riders",
+        "short": "Delivery riders",
+        "money": {
+          "t": "Sponsored perks",
+          "n": "fuel and phone brands pay"
+        },
+        "firstUsers": "Talk to riders waiting outside busy restaurants at lunchtime.",
+        "w": 0
+      },
+      {
+        "text": "for people who kill every plant",
+        "short": "Plant killers",
+        "money": {
+          "t": "Plant shop affiliates",
+          "n": "commission on the replacements"
+        },
+        "firstUsers": "Start a 'my plant graveyard' photo trend on Instagram.",
+        "w": 0
+      },
+      {
+        "text": "for introverts at networking events",
+        "short": "Introverts at events",
+        "money": {
+          "t": "Organizer plans",
+          "n": "event hosts pay for better mixers"
+        },
+        "firstUsers": "Partner with one meetup organizer and run it at their next event.",
+        "w": 0
+      },
+      {
+        "text": "for competitive speedcubers",
+        "short": "Speedcubers",
+        "money": {
+          "t": "Event sponsorships",
+          "n": "puzzle brands sponsor"
+        },
+        "firstUsers": "Post in r/Cubers and show up at your next local competition.",
         "w": -1
       },
       {
-        "text": "for wedding planners",
-        "short": "Wedding planners",
+        "text": "for your landlord",
+        "short": "Your landlord",
         "money": {
-          "t": "Vendor lead fees",
-          "n": "caterers pay for referrals"
+          "t": "Landlord fee",
+          "n": "per property, monthly"
         },
-        "firstUsers": "Cold-email 20 planners you find on Instagram with a 60-second demo video.",
-        "w": 0
+        "firstUsers": "Ask your own landlord. Awkward, but fast.",
+        "w": -1
+      },
+      {
+        "text": "for your ex",
+        "short": "Your ex",
+        "money": {
+          "t": "Breakup bundle",
+          "n": "one-time, non-refundable"
+        },
+        "firstUsers": "Please don't.",
+        "w": -2
       }
     ],
     "twist": [
       {
-        "text": "where everything is anonymous",
-        "short": "Everything is anonymous",
-        "tag": "anon",
+        "text": "that runs entirely over SMS",
+        "short": "Runs over SMS",
         "money": {
-          "t": "Ads",
-          "n": "no personal data, so ads carry the load"
+          "t": "Per-message fees",
+          "n": "works on any phone"
         },
-        "w": -1
+        "w": 1
       },
       {
-        "text": "where it costs a dollar every time you use it",
-        "short": "$1 every time you use it",
-        "tag": "paywall",
+        "text": "where you pay what you think it was worth, afterwards",
+        "short": "Pay what it was worth",
         "money": {
-          "t": "$1 per use",
-          "n": "the twist is the business model"
+          "t": "Pay-what-you-want",
+          "n": "plus a suggested price"
+        },
+        "w": 1
+      },
+      {
+        "text": "where every new feature is voted in by users each week",
+        "short": "Users vote features in",
+        "money": {
+          "t": "Voting power",
+          "n": "paying members vote twice"
+        },
+        "w": 1
+      },
+      {
+        "text": "that sends a paper postcard every month",
+        "short": "Monthly postcard",
+        "money": {
+          "t": "Postcard plan",
+          "n": "covers printing and postage"
+        },
+        "w": 1
+      },
+      {
+        "text": "where you can only post from the exact location",
+        "short": "Only on location",
+        "money": {
+          "t": "Venue partners",
+          "n": "places pay to be featured"
+        },
+        "w": 1
+      },
+      {
+        "text": "with a human double-checking every answer",
+        "short": "Human double-checks",
+        "money": {
+          "t": "Verified tier",
+          "n": "the humans are the premium"
+        },
+        "w": 1
+      },
+      {
+        "text": "that only works when two people press the button together",
+        "short": "Two-person button",
+        "money": {
+          "t": "Group plans",
+          "n": "it's social by design"
         },
         "w": 0
       },
       {
-        "text": "where it only works from 6 to 9am",
-        "short": "Only works 6–9am",
-        "tag": "timeboxed",
+        "text": "where the AI argues against you first",
+        "short": "AI argues back",
         "money": {
-          "t": "Off-hours pass",
-          "n": "pay to use it anytime"
-        },
-        "w": -1
-      },
-      {
-        "text": "where AI writes everything for you",
-        "short": "AI writes everything",
-        "tag": "ai",
-        "money": {
-          "t": "Compute pass-through",
-          "n": "heavier users pay more"
-        },
-        "w": 1
-      },
-      {
-        "text": "where it's entirely voice-based",
-        "short": "Voice only",
-        "tag": "voice",
-        "money": {
-          "t": "Voice minutes",
-          "n": "free allotment, then paid"
+          "t": "Pro debates",
+          "n": "deeper critiques"
         },
         "w": 0
       },
       {
-        "text": "where you only get one use a day",
-        "short": "One use a day",
-        "tag": "scarcity",
+        "text": "that deletes itself unless someone vouches for it",
+        "short": "Vouch or vanish",
         "money": {
-          "t": "Extra pulls",
-          "n": "pay to skip the daily limit"
-        },
-        "w": 1
-      },
-      {
-        "text": "where it only shows things within 500 feet",
-        "short": "Only within 500 feet",
-        "tag": "hyperlocal",
-        "money": {
-          "t": "Venue partnerships",
-          "n": "hyperlocal ads pay more"
-        },
-        "w": 1
-      },
-      {
-        "text": "where a real human reviews every post",
-        "short": "A human reviews every post",
-        "tag": "human",
-        "money": {
-          "t": "Human-reviewed tier",
-          "n": "it's your biggest cost"
-        },
-        "w": -1
-      },
-      {
-        "text": "where everything disappears after 24 hours",
-        "short": "Disappears after 24 hours",
-        "tag": "ephemeral",
-        "money": {
-          "t": "Keep it forever",
-          "n": "pay to save before it vanishes"
+          "t": "Keep-it fee",
+          "n": "pay to skip the vouching"
         },
         "w": 0
       },
       {
-        "text": "where it's invite-only",
-        "short": "Invite-only",
-        "tag": "invite",
+        "text": "with a physical button you stick on the fridge",
+        "short": "Fridge button",
         "money": {
-          "t": "Paid invites",
-          "n": "or pay to skip the waitlist"
+          "t": "Hardware kit",
+          "n": "sold at a small margin"
         },
-        "w": 1
+        "w": 0
       },
       {
-        "text": "where strangers rate you on it",
-        "short": "Strangers rate you",
-        "tag": "rating",
+        "text": "that gets worse the more you use it",
+        "short": "Gets worse with use",
         "money": {
-          "t": "Legal budget",
-          "n": "honestly, this one is mostly liability"
+          "t": "Reset fee",
+          "n": "pay to make it good again"
+        },
+        "w": -1
+      },
+      {
+        "text": "where strangers can only reply with one emoji",
+        "short": "One-emoji replies",
+        "money": {
+          "t": "Premium emojis",
+          "n": "yes, really"
+        },
+        "w": -1
+      },
+      {
+        "text": "where your mom is the admin",
+        "short": "Mom is the admin",
+        "money": {
+          "t": "Family plan",
+          "n": "mom approves the payment"
         },
         "w": -2
       },
       {
-        "text": "where it only works with friends of friends",
-        "short": "Friends of friends only",
-        "tag": "trust",
+        "text": "that only unlocks during a full moon",
+        "short": "Full moon only",
         "money": {
-          "t": "Verified circles",
-          "n": "pay to expand your network"
+          "t": "Moon pass",
+          "n": "pay to unlock early"
         },
-        "w": 1
+        "w": -2
       }
     ]
   },
   "money": {
     "byTag": {
-      "marketplace": [
+      "auction": [
         {
-          "t": "Transaction fee",
-          "n": "e.g. 5–10% per sale"
+          "t": "Buyer fee",
+          "n": "a small cut when the lowest bid wins"
         },
         {
-          "t": "Featured listings",
-          "n": "pay to show up first"
+          "t": "Featured requests",
+          "n": "pay to get more bids"
+        }
+      ],
+      "bounty": [
+        {
+          "t": "Posting fee",
+          "n": "pay to post a bounty"
+        },
+        {
+          "t": "Success cut",
+          "n": "a share of each paid bounty"
+        }
+      ],
+      "bot": [
+        {
+          "t": "Per-conversation pricing",
+          "n": "businesses pay per chat"
+        },
+        {
+          "t": "Setup fee",
+          "n": "one-time onboarding"
+        }
+      ],
+      "matchmaker": [
+        {
+          "t": "Match fee",
+          "n": "charged only when it works"
+        },
+        {
+          "t": "Priority matching",
+          "n": "pay to go first"
+        }
+      ],
+      "sticker": [
+        {
+          "t": "Sticker packs",
+          "n": "sold per sheet"
+        },
+        {
+          "t": "Pro alerts",
+          "n": "instant notifications"
+        }
+      ],
+      "extension": [
+        {
+          "t": "Pro unlock",
+          "n": "one-time or monthly"
+        },
+        {
+          "t": "Team license",
+          "n": "per seat"
         }
       ],
       "subscription": [
         {
-          "t": "Monthly subscription",
-          "n": "the box is the business"
+          "t": "Monthly box",
+          "n": "the thing is the business"
         },
         {
-          "t": "Premium tier",
-          "n": "rarer, better stuff"
+          "t": "Gift subscriptions",
+          "n": "people pay for friends"
         }
       ],
-      "ai": [
+      "club": [
         {
-          "t": "Usage-based pricing",
-          "n": "pay per generation"
+          "t": "Membership",
+          "n": "scarcity makes it worth paying"
         },
         {
-          "t": "Pro plan",
-          "n": "unlimited runs"
+          "t": "Paid invites",
+          "n": "members buy invites for friends"
         }
       ],
-      "social": [
+      "hotline": [
         {
-          "t": "Freemium",
-          "n": "paid profile perks"
+          "t": "Per-call pricing",
+          "n": "callers pay per call"
         },
+        {
+          "t": "Sponsored line",
+          "n": "a brand sponsors it"
+        }
+      ],
+      "capsule": [
+        {
+          "t": "Capsule fee",
+          "n": "per capsule sealed"
+        },
+        {
+          "t": "Printed keepsake",
+          "n": "a physical copy on opening day"
+        }
+      ],
+      "leaderboard": [
+        {
+          "t": "League entry",
+          "n": "paid private leagues"
+        },
+        {
+          "t": "Sponsored prizes",
+          "n": "brands fund the prizes"
+        }
+      ],
+      "pet": [
+        {
+          "t": "Cosmetics",
+          "n": "paid outfits for the pet"
+        },
+        {
+          "t": "Revive fee",
+          "n": "pay to bring it back"
+        }
+      ],
+      "hardware": [
+        {
+          "t": "Unit sales",
+          "n": "margin on each machine"
+        },
+        {
+          "t": "Restock contracts",
+          "n": "recurring refill fees"
+        }
+      ],
+      "show": [
         {
           "t": "Ads",
-          "n": "only once engagement is real"
-        }
-      ],
-      "dating": [
-        {
-          "t": "Subscription",
-          "n": "unlimited matches"
+          "n": "the only way this works"
         },
         {
-          "t": "Boosts",
-          "n": "pay for extra visibility"
-        }
-      ],
-      "local": [
-        {
-          "t": "Local business ads",
-          "n": "nearby shops pay to appear"
-        },
-        {
-          "t": "Booking commission",
-          "n": "a cut of every reservation"
-        }
-      ],
-      "education": [
-        {
-          "t": "Freemium",
-          "n": "paid streaks and progress"
-        },
-        {
-          "t": "B2B licenses",
-          "n": "schools and employers"
-        }
-      ],
-      "professional": [
-        {
-          "t": "Pro subscription",
-          "n": "advanced search"
-        },
-        {
-          "t": "Recruiter access",
-          "n": "pay per lead"
-        }
-      ],
-      "fitness": [
-        {
-          "t": "Freemium",
-          "n": "paid insights and streaks"
-        },
-        {
-          "t": "Brand sponsorships",
-          "n": "sponsored challenges"
-        }
-      ],
-      "fintech": [
-        {
-          "t": "Per-trade fee",
-          "n": "once compliance is paid for"
-        },
-        {
-          "t": "Interest on float",
-          "n": "idle balances"
+          "t": "Merch",
+          "n": "sell the drama"
         }
       ]
     }
   },
   "build": {
     "byTag": {
-      "marketplace": [
-        "Listings with photos, price and categories",
-        "Search, filters and chat between buyer and seller",
-        "Payments that take a platform fee (Stripe Connect or Razorpay Route)"
+      "auction": [
+        "A request form: what you need, budget and deadline",
+        "Sellers bid down against a countdown",
+        "Pick a winner and pay through the site"
+      ],
+      "bounty": [
+        "Post a task with a reward and a deadline",
+        "People claim it and submit proof",
+        "Hold the reward with a payment provider and release it on approval"
+      ],
+      "bot": [
+        "A WhatsApp Business number that does one clear job",
+        "Simple menu replies before any AI",
+        "A dashboard showing every conversation"
+      ],
+      "matchmaker": [
+        "A short profile form",
+        "Matching rules you can explain in one sentence",
+        "An intro message that makes the first chat easy"
+      ],
+      "sticker": [
+        "Unique QR codes printed on stickers",
+        "A scan page that reaches the owner without revealing them",
+        "An owner dashboard for their tagged things"
+      ],
+      "extension": [
+        "A browser extension that does one thing on one website",
+        "Settings in the popup",
+        "Publish on the Chrome Web Store"
       ],
       "subscription": [
-        "A landing page with three plans and a waitlist",
-        "Checkout with recurring billing",
-        "A simple admin for stock, boxes and shipping"
+        "A landing page with one product and one price",
+        "Recurring billing",
+        "A shipping sheet you can fulfil from home at first"
       ],
-      "ai": [
-        "One prompt flow that does a single job really well",
-        "Usage tracking with a free monthly quota",
-        "Saved history so people come back"
+      "club": [
+        "An application or invite form",
+        "A members-only page or group",
+        "A monthly cap on new members"
       ],
-      "social": [
-        "Profiles and a feed with posts and reactions",
-        "Invite links so every user brings friends",
-        "Basic moderation: report, block, delete"
+      "hotline": [
+        "A phone number from a calling API",
+        "A voice menu with three options",
+        "Call notes for follow-up"
       ],
-      "dating": [
-        "Profiles built on prompts instead of bios",
-        "Mutual-like matching and chat",
-        "Safety first: verification, report and block"
+      "capsule": [
+        "Write, record or upload something to seal",
+        "Pick an opening date",
+        "An email and a printable card on opening day"
       ],
-      "local": [
-        "Listings with location, hours and photos",
-        "Search by distance and category",
-        "Reviews with photo proof to cut spam"
+      "leaderboard": [
+        "One metric people can log honestly",
+        "Weekly rankings with friends",
+        "A reset every season to keep it fair"
       ],
-      "education": [
-        "Bite-sized lessons with a daily streak",
-        "Quick quizzes with instant feedback",
-        "A progress dashboard for learners and teachers"
+      "pet": [
+        "A creature whose mood follows one real habit",
+        "A daily check-in that feeds it",
+        "Gentle notifications when it's sad"
       ],
-      "professional": [
-        "Profiles built around skills and proof of work",
-        "Search and filters for the people who hire",
-        "Intro requests instead of cold DMs"
+      "hardware": [
+        "A prototype from off-the-shelf parts",
+        "A QR or UPI payment code on the front",
+        "Restock alerts to your phone"
       ],
-      "fitness": [
-        "One-tap logging for the core activity",
-        "Streaks, goals and weekly summaries",
-        "Leaderboards with friends or a club"
-      ],
-      "fintech": [
-        "Read-only first: track and visualize, don't move money",
-        "Bank or UPI data import with clear consent",
-        "Talk to a compliance expert before handling real transactions"
+      "show": [
+        "A pilot episode shot on a phone",
+        "Audience voting on the next episode",
+        "Honestly: a lawyer"
       ]
     }
   },
   "daily": [
     {
-      "id": "shift-swap-wards",
-      "title": "Shift-swap board for hospital wards",
-      "pitch": "Nurses post and claim open shifts in two taps, and the ward manager approves from their phone.",
-      "problem": "Shift swaps live in chaotic WhatsApp groups and paper rosters, so managers lose track of who is actually covering.",
-      "whoPays": "Ward managers and small private hospitals.",
-      "pricing": "$3 per nurse per month; first ward free for 60 days.",
+      "id": "local-eyes-flat-check",
+      "title": "Pay a local student to video-check a flat before you rent it",
+      "pitch": "Moving to a new city? A verified student near the flat does a live video walkthrough with your checklist, so you don't sign blind.",
+      "problem": "People relocating for college or a job rent flats from photos, then discover damp walls, weak water pressure or a 40-minute walk to the metro.",
+      "whoPays": "People relocating to a new city; relocation teams at companies.",
+      "pricing": "$15 per walkthrough; the student keeps $11.",
       "mvp": [
-        "Import the roster from a spreadsheet",
-        "Post a shift, claim a shift",
-        "One-tap manager approval",
-        "WhatsApp or SMS alerts for open shifts"
+        "Request form with the listing link and your checklist",
+        "Match a verified student within 3 km",
+        "Live video call with the checklist on screen",
+        "Short photo report after the call"
       ],
-      "firstUsers": "Ask three nurse friends which ward runs swaps on WhatsApp, then offer that ward a free setup.",
+      "firstUsers": "Post in 'moving to [city]' groups and pay the first ten walkers yourself to prove it works.",
       "difficulty": 2,
       "tags": [
-        "B2B",
-        "Healthcare ops"
+        "Marketplace",
+        "Students"
       ]
     },
     {
-      "id": "college-club-manager",
-      "title": "Club manager for college societies",
-      "pitch": "Members, events, dues and QR attendance for student clubs, in one place instead of five spreadsheets.",
-      "problem": "Every year the new committee inherits messy sheets, unpaid dues and no record of who attended what.",
-      "whoPays": "Student councils and college activity offices, as a campus license.",
-      "pricing": "Free for one club; $49 per month for a whole campus.",
+      "id": "check-in-vault",
+      "title": "A vault that hands your 'if something happens' notes to one person",
+      "pitch": "Write down where the important stuff is. If you stop checking in for 60 days, one trusted person gets it.",
+      "problem": "After an accident or a death, families scramble because nobody knows which bank, which insurer or which password manager to look in.",
+      "whoPays": "Adults with families or dependents; insurers can offer it as a perk.",
+      "pricing": "$3 per month, or $25 a year.",
       "mvp": [
-        "Member directory with roles",
-        "Event pages with QR check-in",
-        "Dues collection through UPI or card links",
-        "Handover mode for next year's committee"
+        "Encrypted notes and file uploads",
+        "Monthly one-tap check-in by email or WhatsApp",
+        "One trusted contact with a calm release message",
+        "A grace period with reminders before anything is sent"
       ],
-      "firstUsers": "Run it for your college's two biggest clubs this semester, then pitch the student council with their numbers.",
+      "firstUsers": "Publish a genuinely useful 'what my family would need' checklist; the vault is the obvious next step for readers.",
       "difficulty": 2,
       "tags": [
-        "Students",
-        "B2B"
+        "Consumer",
+        "Privacy"
       ]
     },
     {
-      "id": "invoice-chaser",
-      "title": "Polite invoice chaser for freelancers",
-      "pitch": "Connect your invoices and it sends friendly, escalating reminders until you get paid.",
-      "problem": "Freelancers hate chasing clients, so late invoices sit for weeks and cash flow suffers.",
-      "whoPays": "Freelance designers, developers and small agencies.",
-      "pricing": "$9 per month.",
+      "id": "toast-coach",
+      "title": "Rehearsal coach for wedding toasts and farewell speeches",
+      "pitch": "Record your speech and get feedback on length, pace, jokes that won't land and names you mispronounce, then practice until it's good.",
+      "problem": "Best men and maids of honor write speeches the night before, run long, and bomb in front of 300 people.",
+      "whoPays": "Anyone giving a speech soon; wedding planners bundle it.",
+      "pricing": "$9 per speech, with unlimited rehearsals for two weeks.",
       "mvp": [
-        "Add an invoice by upload or forwarded email",
-        "Reminder schedule with three tone levels",
-        "Client-facing pay-now page",
-        "Dashboard of who owes what"
+        "Record or upload a rehearsal",
+        "Timing, filler-word and pace feedback",
+        "Flags for inside jokes and risky lines",
+        "A clean printable cue card"
       ],
-      "firstUsers": "Offer a free overdue-invoice audit in two freelancer communities and follow up with everyone who replies.",
-      "difficulty": 1,
-      "tags": [
-        "Freelancers",
-        "Finance ops"
-      ]
-    },
-    {
-      "id": "tuition-center-app",
-      "title": "Fee and attendance app for tuition centers",
-      "pitch": "Batches, attendance, fee reminders and parent updates for small coaching classes, run from one phone.",
-      "problem": "Tuition owners track fees in notebooks and chase parents one phone call at a time.",
-      "whoPays": "Owners of coaching and tuition centers with 30 to 300 students.",
-      "pricing": "$15 per month per center; free under 25 students.",
-      "mvp": [
-        "Batches and student list",
-        "One-tap attendance",
-        "Automatic fee reminders on WhatsApp",
-        "Monthly progress note to parents"
-      ],
-      "firstUsers": "Visit five tuition centers near your college with a one-page demo and set up the first one for free.",
-      "difficulty": 1,
-      "tags": [
-        "Education",
-        "Small business"
-      ]
-    },
-    {
-      "id": "tiny-status-page",
-      "title": "Five-minute status page for tiny SaaS",
-      "pitch": "Uptime checks and a clean public status page, priced for products with 10 customers, not 10,000.",
-      "problem": "Small teams skip status pages because the big tools are pricey and take an afternoon to set up.",
-      "whoPays": "Indie hackers and two-to-ten person software teams.",
-      "pricing": "$5 per month for five monitors and one status page.",
-      "mvp": [
-        "HTTP checks every minute from two regions",
-        "Public status page with incident notes",
-        "Email and Slack alerts",
-        "Embeddable 'all systems normal' badge"
-      ],
-      "firstUsers": "Offer it free to 20 makers launching this month in exchange for the badge in their footer.",
+      "firstUsers": "Partner with two wedding planners and offer it free to the speakers at their next five weddings.",
       "difficulty": 2,
       "tags": [
-        "Dev tools",
-        "B2B"
-      ]
-    },
-    {
-      "id": "mock-interview-matcher",
-      "title": "Mock-interview matcher for placement season",
-      "pitch": "Pairs juniors with seniors who cracked the same companies for 30-minute mock interviews.",
-      "problem": "Students prepare alone while the seniors who already got those offers are one message away but hard to schedule.",
-      "whoPays": "College placement cells; students pay for slots with alumni.",
-      "pricing": "$99 per semester per college; alumni slots at $5 each.",
-      "mvp": [
-        "Seniors list the companies and roles they cleared",
-        "Juniors book open slots",
-        "Built-in video link and feedback form",
-        "Leaderboard of the most helpful seniors"
-      ],
-      "firstUsers": "Get 15 final-year students from your batch to host slots, then share the booking link in the junior groups.",
-      "difficulty": 2,
-      "tags": [
-        "Students",
-        "Careers"
-      ]
-    },
-    {
-      "id": "gym-renewals",
-      "title": "Renewal tracker for neighborhood gyms",
-      "pitch": "Shows which memberships expire this week and sends renewal nudges automatically.",
-      "problem": "Small gyms lose members simply because nobody reminded them their plan ended.",
-      "whoPays": "Owners of single-location gyms, yoga and martial-arts studios.",
-      "pricing": "$12 per month per location.",
-      "mvp": [
-        "Member list with plan end dates",
-        "Automatic renewal reminders",
-        "Pay-to-renew link",
-        "Weekly at-risk members report"
-      ],
-      "firstUsers": "Offer three gyms near you a free import of their register and track the renewals you save them.",
-      "difficulty": 1,
-      "tags": [
-        "Small business",
-        "Fitness"
-      ]
-    },
-    {
-      "id": "podcast-show-notes",
-      "title": "Show notes from a podcast episode, automatically",
-      "pitch": "Upload an episode and get a transcript, chapters, show notes and three social clips to review.",
-      "problem": "Small podcasters spend hours on show notes and chapter markers after every episode.",
-      "whoPays": "Independent podcasters and small podcast agencies.",
-      "pricing": "$19 per month for four episodes.",
-      "mvp": [
-        "Audio upload and transcription",
-        "Chapter markers with timestamps",
-        "Editable show-notes draft",
-        "Export to the podcast host's description field"
-      ],
-      "firstUsers": "Process the latest episode of 20 small podcasts for free and email each host the result.",
-      "difficulty": 2,
-      "tags": [
-        "Creators",
-        "AI"
-      ]
-    },
-    {
-      "id": "fest-checkin",
-      "title": "Ticketing and QR check-in for college fests",
-      "pitch": "Sell passes, scan them at the gate, and watch live headcounts for every event in the fest.",
-      "problem": "Fest teams juggle Google Forms, payment screenshots and long gate queues.",
-      "whoPays": "Fest committees and event clubs.",
-      "pricing": "A small fee per ticket sold; free for free events.",
-      "mvp": [
-        "Event pages with pass types",
-        "Payments with instant QR passes",
-        "Scanner mode on any phone",
-        "Live dashboard of entries per event"
-      ],
-      "firstUsers": "Run check-in for one department event for free, then pitch the main fest committee with the queue times you saved.",
-      "difficulty": 2,
-      "tags": [
-        "Students",
+        "AI",
         "Events"
       ]
     },
     {
-      "id": "clinic-no-shows",
-      "title": "No-show reducer for small clinics",
-      "pitch": "Appointment reminders with one-tap confirm or reschedule, so empty slots get refilled.",
-      "problem": "Dentists and small clinics lose hours every week to patients who forget appointments.",
-      "whoPays": "Independent clinics, dentists and physiotherapists.",
-      "pricing": "$25 per month per practitioner.",
+      "id": "receipt-to-dinners",
+      "title": "Turn your grocery receipt into this week's dinners",
+      "pitch": "Snap the receipt and get five dinners that use what you bought, ordered by what spoils first.",
+      "problem": "People buy vegetables with good intentions and throw a third of them away by Friday.",
+      "whoPays": "Home cooks on a freemium plan; grocery chains pay to feature it at checkout.",
+      "pricing": "Free for two receipts a week; $2 per month unlimited.",
       "mvp": [
-        "Simple appointment calendar or import",
-        "Reminders a day and two hours before",
-        "Confirm and reschedule buttons",
-        "Waitlist that fills cancelled slots"
+        "Receipt photo to item list",
+        "Recipes ranked by what expires first",
+        "A 'use it today' reminder",
+        "An editable pantry list"
       ],
-      "firstUsers": "Ask your own dentist how many no-shows they had last month, then offer a free month to cut that number.",
+      "firstUsers": "Post before-and-after 'food I wasted this week' photos in budget-cooking communities.",
       "difficulty": 2,
       "tags": [
-        "Healthcare ops",
-        "Small business"
+        "Consumer",
+        "Food"
       ]
     },
     {
-      "id": "rent-receipts",
-      "title": "Rent reminders and receipts for small landlords",
-      "pitch": "Automatic rent reminders, payment links and clean receipts for landlords with a few units.",
-      "problem": "Small landlords chase rent over text and scramble for receipts at tax time.",
-      "whoPays": "Landlords with 2 to 20 units.",
-      "pricing": "$2 per unit per month.",
+      "id": "neighbor-notes",
+      "title": "Polite notes between neighbors, without the awkward knock",
+      "pitch": "A QR code in the lobby lets neighbors send short, anonymous, pre-worded notes like 'music after midnight' or 'your car blocks mine'.",
+      "problem": "Small annoyances in apartment buildings turn into feuds because nobody wants to knock on a stranger's door.",
+      "whoPays": "Housing societies and building managers.",
+      "pricing": "$15 per building per month.",
       "mvp": [
-        "Units and tenants list",
-        "Monthly reminders with a pay link",
-        "Auto-generated receipts",
-        "Year-end summary export"
+        "Flat-to-flat notes with preset polite wording",
+        "Rate limits so it can't be used to harass",
+        "Manager view for repeat issues",
+        "Printable lobby QR poster"
       ],
-      "firstUsers": "Find landlords in local property groups and offer to set up their first building for them.",
+      "firstUsers": "Put it up in your own building with the society's permission and share the results in local groups.",
       "difficulty": 1,
       "tags": [
-        "Real estate",
-        "Small business"
-      ]
-    },
-    {
-      "id": "internship-tracker",
-      "title": "Internship application tracker",
-      "pitch": "A simple pipeline for every application, deadline and follow-up, like a CRM for your job hunt.",
-      "problem": "Students apply to 50+ roles across portals, emails and sheets, and miss follow-ups.",
-      "whoPays": "Students on a freemium plan; placement cells for cohort dashboards.",
-      "pricing": "Free for 15 applications; $3 per month after that.",
-      "mvp": [
-        "Board of applications by stage",
-        "Deadline and follow-up reminders",
-        "Save roles with a browser button",
-        "Response rate per resume version"
-      ],
-      "firstUsers": "Share it in your batch's placement group before the next hiring cycle opens.",
-      "difficulty": 1,
-      "tags": [
-        "Students",
-        "Careers"
-      ]
-    },
-    {
-      "id": "shop-reorder-alerts",
-      "title": "Low-stock alerts for small shops",
-      "pitch": "Scan purchase bills and get a reorder list before best-sellers run out.",
-      "problem": "Small shops run out of top items because stock lives in the owner's head.",
-      "whoPays": "Neighborhood grocery stores, pharmacies and stationery shops.",
-      "pricing": "$8 per month per store.",
-      "mvp": [
-        "Product list built from purchase bills",
-        "Quick daily count or sales tally",
-        "Reorder alerts on WhatsApp",
-        "One-tap order message to the supplier"
-      ],
-      "firstUsers": "Spend a Saturday setting it up at one shop, then ask them to introduce you to their supplier's other shops.",
-      "difficulty": 2,
-      "tags": [
-        "Retail",
-        "Small business"
-      ]
-    },
-    {
-      "id": "photo-selection",
-      "title": "Photo selection app for wedding photographers",
-      "pitch": "Clients heart favorites from thousands of photos, and the photographer gets a clean final list.",
-      "problem": "Couples send favorites as WhatsApp screenshots, and photographers spend days matching file names.",
-      "whoPays": "Wedding and event photographers.",
-      "pricing": "$15 per month for unlimited galleries.",
-      "mvp": [
-        "Fast gallery upload with thumbnails",
-        "Private client link with favorites",
-        "Export selected file names for editing",
-        "Watermarked previews"
-      ],
-      "firstUsers": "Message 30 wedding photographers on Instagram with a 60-second demo using their own sample photos.",
-      "difficulty": 2,
-      "tags": [
-        "Creators",
+        "Community",
         "B2B"
       ]
     },
     {
-      "id": "hackathon-judging",
-      "title": "Judging and scoring tool for hackathons",
-      "pitch": "Judges score projects on a shared rubric from their phones, and the leaderboard updates live.",
-      "problem": "Hackathon judging runs on paper sheets and a frantic spreadsheet at 2 a.m.",
-      "whoPays": "Hackathon organizers, tech clubs and companies running internal hacks.",
-      "pricing": "$29 per event; free for student events under 50 teams.",
+      "id": "tourist-photo-menus",
+      "title": "Photo menus in eight languages for local restaurants",
+      "pitch": "Tourists scan a QR code and see every dish with a photo, a plain description and allergy tags in their own language.",
+      "problem": "Tourists skip great local restaurants because they can't read the menu and are too shy to ask.",
+      "whoPays": "Restaurants in tourist areas.",
+      "pricing": "$19 per month per restaurant; photos shot on your first visit.",
       "mvp": [
-        "Rubric builder",
-        "Judge assignments per room or track",
-        "Mobile scoring form",
-        "Live leaderboard with tie-breakers"
+        "Photograph each dish with a phone",
+        "AI translation checked by a native speaker",
+        "Language picker on the QR page",
+        "Allergy and spice-level tags"
       ],
-      "firstUsers": "Offer it free to the next hackathon at your college and at two nearby colleges.",
+      "firstUsers": "Walk the busiest tourist street in your city and offer three restaurants a free month.",
       "difficulty": 1,
-      "tags": [
-        "Events",
-        "Students"
-      ]
-    },
-    {
-      "id": "alumni-mentors",
-      "title": "Alumni mentor matching for one college",
-      "pitch": "Students request 20-minute chats with alumni by role, company and city.",
-      "problem": "Alumni want to help, but students don't know whom to ask and cold messages go unanswered.",
-      "whoPays": "Colleges and alumni associations.",
-      "pricing": "$1,000 per year per college, with a free pilot semester.",
-      "mvp": [
-        "Alumni profiles with 'ask me about' topics",
-        "Request and accept flow",
-        "Calendar slots",
-        "Thank-you notes alumni can share"
-      ],
-      "firstUsers": "Recruit 25 alumni from your own department through LinkedIn, then launch it to your batch.",
-      "difficulty": 2,
-      "tags": [
-        "Students",
-        "Community"
-      ]
-    },
-    {
-      "id": "testimonial-wall",
-      "title": "Testimonial collector for small businesses",
-      "pitch": "Send one link, collect text or video testimonials, and embed a clean wall of them on your site.",
-      "problem": "Great customer feedback gets lost in DMs and email instead of helping sell.",
-      "whoPays": "Coaches, course creators, small SaaS and local services.",
-      "pricing": "Free for 10 testimonials; $12 per month for unlimited.",
-      "mvp": [
-        "Shareable collection form for text and video",
-        "Approve or hide each entry",
-        "Embeddable wall and carousel",
-        "Import from Google reviews"
-      ],
-      "firstUsers": "Collect testimonials for three local businesses for free and publish their walls as case studies.",
-      "difficulty": 1,
-      "tags": [
-        "Marketing",
-        "Small business"
-      ]
-    },
-    {
-      "id": "github-portfolio",
-      "title": "Portfolio site from your GitHub, in one click",
-      "pitch": "Turns your repos and READMEs into a clean portfolio page recruiters actually read.",
-      "problem": "Students have good projects on GitHub but no portfolio that explains them.",
-      "whoPays": "Students and junior developers on a freemium plan.",
-      "pricing": "Free on a subdomain; $4 per month for a custom domain.",
-      "mvp": [
-        "Sign in with GitHub",
-        "Pick projects and auto-generate summaries",
-        "Three themes",
-        "Custom domain and a recruiter-view counter"
-      ],
-      "firstUsers": "Build portfolios for 20 friends in your batch and share the best ones in developer communities.",
-      "difficulty": 1,
-      "tags": [
-        "Students",
-        "Dev tools"
-      ]
-    },
-    {
-      "id": "whatsapp-menu",
-      "title": "Daily specials menu updated by WhatsApp",
-      "pitch": "The owner sends a WhatsApp message and the QR menu on every table updates instantly.",
-      "problem": "Small restaurants print menus that go stale and can't show daily specials or sold-out items.",
-      "whoPays": "Cafés and small restaurants.",
-      "pricing": "$10 per month per location.",
-      "mvp": [
-        "QR menu page",
-        "Update items and prices by WhatsApp message",
-        "Mark sold-out in one tap",
-        "View counts per dish"
-      ],
-      "firstUsers": "Set it up for your favorite café near campus for free and ask the owner to refer two neighbors.",
-      "difficulty": 2,
       "tags": [
         "Hospitality",
-        "Small business"
+        "Travel"
       ]
     },
     {
-      "id": "flatmate-bills",
-      "title": "Bill splitter for shared flats and hostels",
-      "pitch": "Tracks rent, electricity and groceries per flatmate, with UPI or card links to settle up.",
-      "problem": "Flatmates argue over who paid for what, and the math gets messy when people move in and out.",
-      "whoPays": "Students and young professionals; co-living operators for a branded version.",
-      "pricing": "Free for one flat; $2 per month for recurring bills and receipts.",
+      "id": "fix-it-club",
+      "title": "Fix-it club: one monthly visit that clears your list of small repairs",
+      "pitch": "Members add broken things to a shared list; once a month a handyperson comes and fixes all of them in one visit.",
+      "problem": "Renters live with dripping taps, loose handles and dead bulbs for months because each fix is too small to book someone for.",
+      "whoPays": "Busy renters and homeowners.",
+      "pricing": "$29 per month for one visit of up to 90 minutes.",
       "mvp": [
-        "Flats with members",
-        "Recurring and one-off expenses",
-        "Balances with settle-up links",
-        "Move-in and move-out proration"
+        "A shared fix list with photos",
+        "A monthly booking slot",
+        "Handyperson view with the list and parts needed",
+        "Before-and-after photos for each fix"
       ],
-      "firstUsers": "Start with your own flat and two friends' flats, then post in hostel and PG groups near campus.",
+      "firstUsers": "Recruit one reliable handyperson and sell the first 20 memberships inside one apartment complex.",
+      "difficulty": 2,
+      "tags": [
+        "Services",
+        "Subscription"
+      ]
+    },
+    {
+      "id": "paid-trial-projects",
+      "title": "48-hour paid trial projects instead of internship interviews",
+      "pitch": "Small companies post a real two-day task with a fixed fee; students do it, get paid, and the best get hired.",
+      "problem": "Students can't prove skills without experience, and small companies waste weeks on interviews that predict nothing.",
+      "whoPays": "Startups and small agencies pay the trial fee plus 15%.",
+      "pricing": "15% on top of each trial fee.",
+      "mvp": [
+        "Company posts a scoped task and fee",
+        "Students apply with one link",
+        "Submission and review flow",
+        "Payout, plus a 'make an offer' button"
+      ],
+      "firstUsers": "Get five founders you know to post one trial each, then share them in college placement groups.",
+      "difficulty": 2,
+      "tags": [
+        "Careers",
+        "Marketplace"
+      ]
+    },
+    {
+      "id": "dish-tasting-panel",
+      "title": "A tasting panel that tells restaurants if a new dish will sell",
+      "pitch": "Restaurants invite ten local food lovers to try a new dish for free and rate it before it goes on the menu.",
+      "problem": "Restaurants add dishes on a hunch and find out a month later that nobody orders them.",
+      "whoPays": "Restaurants and cloud kitchens.",
+      "pricing": "$49 per tasting; the restaurant provides the food.",
+      "mvp": [
+        "Panel sign-up with taste profiles",
+        "Tasting invites with time slots",
+        "A 60-second rating form",
+        "Report: would order, fair price, what to fix"
+      ],
+      "firstUsers": "Recruit 30 panelists from local food Instagram pages, then pitch three cloud kitchens.",
+      "difficulty": 1,
+      "tags": [
+        "Hospitality",
+        "Marketplace"
+      ]
+    },
+    {
+      "id": "return-to-owner-stickers",
+      "title": "QR stickers that bring lost things back to you",
+      "pitch": "Stick one on your laptop, keys or bag. Whoever finds it scans the code and chats with you without ever seeing your number.",
+      "problem": "Lost-and-found runs on luck because finders have no easy, safe way to reach the owner.",
+      "whoPays": "Students, travelers and parents; schools buy them in bulk.",
+      "pricing": "$6 for a sheet of 10 stickers.",
+      "mvp": [
+        "Unique codes printed on a sticker sheet",
+        "Scan page with an anonymous chat",
+        "Owner alerts on WhatsApp or email",
+        "A count of things returned"
+      ],
+      "firstUsers": "Sell sheets during orientation week and at your campus bookstore.",
       "difficulty": 1,
       "tags": [
         "Consumer",
-        "Students"
+        "Physical + web"
       ]
     },
     {
-      "id": "changelog-widget",
-      "title": "Changelog widget for small apps",
-      "pitch": "Write updates once and show them in-app, on a public page and in a monthly email.",
-      "problem": "Small teams ship constantly, but users never notice new features and churn.",
-      "whoPays": "Small SaaS teams and indie app makers.",
-      "pricing": "$9 per month for one product.",
+      "id": "tough-customer-practice",
+      "title": "Practice calls with an AI customer who is having a terrible day",
+      "pitch": "Support and sales trainees practice with realistic angry, confused or impatient AI callers and get scored on how they handled it.",
+      "problem": "New support staff learn to handle difficult customers on real customers, which is bad for both.",
+      "whoPays": "Call centers, support teams and sales bootcamps.",
+      "pricing": "$20 per trainee per month.",
       "mvp": [
-        "Markdown editor for updates",
-        "Embeddable in-app widget",
-        "Public changelog page",
-        "Monthly digest email to users"
+        "Five customer personas with different moods",
+        "Voice or text practice sessions",
+        "Scorecard on tone, accuracy and resolution",
+        "Manager view of each trainee's progress"
       ],
-      "firstUsers": "Offer free setup to 15 indie makers who post weekly updates on X or Reddit.",
-      "difficulty": 1,
+      "firstUsers": "Offer a free pilot to one call center's training batch and publish their before-and-after scores.",
+      "difficulty": 3,
       "tags": [
-        "Dev tools",
-        "Marketing"
-      ]
-    },
-    {
-      "id": "ta-rubric-grading",
-      "title": "Rubric grading tool for teaching assistants",
-      "pitch": "Grade assignments against a rubric with reusable comments, then export marks in one click.",
-      "problem": "TAs rewrite the same feedback a hundred times and copy marks into the college portal by hand.",
-      "whoPays": "Departments and TAs at colleges and coaching institutes.",
-      "pricing": "Free for one course; $39 per month per department.",
-      "mvp": [
-        "Rubric builder",
-        "Side-by-side grading view",
-        "Comment bank with shortcuts",
-        "CSV export in the portal's format"
-      ],
-      "firstUsers": "Ask two TAs in your department to grade one assignment with it and time how long it takes.",
-      "difficulty": 2,
-      "tags": [
-        "Education",
+        "AI",
         "B2B"
       ]
     },
     {
-      "id": "warranty-locker",
-      "title": "Bill and warranty locker",
-      "pitch": "Snap a bill once and get reminded before the warranty or return window runs out.",
-      "problem": "People lose bills and miss free repairs or returns on things they already paid for.",
-      "whoPays": "Consumers on a freemium plan; electronics stores for a branded version.",
-      "pricing": "Free for 10 items; $1 per month for unlimited and family sharing.",
+      "id": "farewell-pot",
+      "title": "One link for the office farewell gift and card",
+      "pitch": "Start a pot for a leaving colleague; everyone chips in and signs a shared card, and nobody chases anyone for cash.",
+      "problem": "Office farewells mean one person chasing 40 colleagues for money and a card that never gets signed in time.",
+      "whoPays": "Organizers pay a small fee; companies buy a team plan.",
+      "pricing": "3% of the pot, or $10 per month for a team.",
       "mvp": [
-        "Photo upload with date and product fields",
-        "Warranty and return-window reminders",
-        "Search by product or store",
-        "Share items with family"
+        "Create a pot with a deadline",
+        "Pay by UPI or card",
+        "Shared digital card with messages and photos",
+        "Automatic nudges to people who haven't signed"
       ],
-      "firstUsers": "Post a short 'never lose a bill again' video in your city's local groups and collect the first 100 users.",
+      "firstUsers": "Use it for the next farewell in your office or your parents' offices, with a small 'made with' link on the card.",
       "difficulty": 1,
       "tags": [
-        "Consumer",
-        "Productivity"
+        "Workplace",
+        "Payments"
       ]
     },
     {
-      "id": "volunteer-scheduler",
-      "title": "Volunteer scheduling for small NGOs",
-      "pitch": "Volunteers pick shifts from a link, get reminders, and the NGO sees hours logged for reports.",
-      "problem": "Small NGOs coordinate volunteers over spreadsheets and calls, and people forget their shifts.",
-      "whoPays": "Small NGOs and community groups, often from grant budgets.",
-      "pricing": "Free under 30 volunteers; $15 per month after.",
+      "id": "hostel-laundry-status",
+      "title": "Live laundry machine status for hostels",
+      "pitch": "Every machine gets a QR code; students see which ones are free and get pinged when their wash is done.",
+      "problem": "Students carry laundry down four floors to find every machine busy, and wet clothes sit for hours after cycles end.",
+      "whoPays": "Hostels, PGs and laundromats.",
+      "pricing": "$2 per machine per month.",
       "mvp": [
-        "Shift sign-up page",
-        "Reminders by WhatsApp or email",
-        "Check-in and hours log",
-        "Impact report export for donors"
+        "QR per machine to start and end a cycle",
+        "Live board of free machines",
+        "'Your wash is done' notification",
+        "A queue when every machine is busy"
       ],
-      "firstUsers": "Volunteer with one NGO for a weekend and set it up for their next drive.",
+      "firstUsers": "Put codes on the machines in your own hostel and count how many wasted trips you save in a week.",
       "difficulty": 1,
       "tags": [
-        "Nonprofit",
-        "Community"
+        "Students",
+        "Hostels"
+      ]
+    },
+    {
+      "id": "rental-cv",
+      "title": "A rental CV that proves you're a good tenant",
+      "pitch": "Renters collect verified references from past landlords and flatmates into one shareable profile.",
+      "problem": "Good tenants get rejected or asked for huge deposits because landlords have nothing to judge them by.",
+      "whoPays": "Renters pay for a verified badge; landlords and brokers pay for screening.",
+      "pricing": "Free profile; $5 for a verified badge.",
+      "mvp": [
+        "Profile with rental history",
+        "Reference requests sent to past landlords",
+        "Verified badge after two references",
+        "Share link for new landlords"
+      ],
+      "firstUsers": "Target students moving into their second flat, when they finally have a landlord to vouch for them.",
+      "difficulty": 2,
+      "tags": [
+        "Real estate",
+        "Trust"
+      ]
+    },
+    {
+      "id": "stall-preorders",
+      "title": "Order ahead from the street stall with the longest queue",
+      "pitch": "Popular street food stalls take WhatsApp pre-orders with a pickup time, so regulars skip the line.",
+      "problem": "The best stalls lose customers at peak hours because people won't wait 30 minutes on the pavement.",
+      "whoPays": "Street food vendors, for less than the price of one plate a day.",
+      "pricing": "$5 per month per stall.",
+      "mvp": [
+        "WhatsApp order bot with the stall's menu",
+        "Pickup time slots",
+        "Order list on the vendor's phone",
+        "UPI payment link"
+      ],
+      "firstUsers": "Pick the stall with the longest queue near your college and run it for them free for a month.",
+      "difficulty": 1,
+      "tags": [
+        "Food",
+        "Small business"
+      ]
+    },
+    {
+      "id": "chore-auction",
+      "title": "Chore auction for flatmates and families",
+      "pitch": "Chores go up for auction each week; whoever bids the fewest points takes the job, and points buy perks everyone agreed on.",
+      "problem": "Chore charts fail because nobody agrees what's fair, and the same person always ends up doing the dishes.",
+      "whoPays": "Households on a freemium plan.",
+      "pricing": "Free for one home; $2 per month for rewards and history.",
+      "mvp": [
+        "Weekly chore list",
+        "Point bidding with a deadline",
+        "Proof photo when a chore is done",
+        "A rewards shop the household sets up"
+      ],
+      "firstUsers": "Run it in your own flat for a month and post the leaderboard; flatmate drama spreads by itself.",
+      "difficulty": 1,
+      "tags": [
+        "Consumer",
+        "Households"
+      ]
+    },
+    {
+      "id": "local-audio-walks",
+      "title": "Audio walking tours recorded by locals, not guidebooks",
+      "pitch": "Locals record 20-minute walks about their own neighborhood; visitors pay a few dollars to follow them with GPS-triggered stories.",
+      "problem": "Tourists see the same five landmarks, while the stories that make a neighborhood interesting live in residents' heads.",
+      "whoPays": "Tourists pay per walk; creators keep most of it.",
+      "pricing": "$3 per walk; creators get 70%.",
+      "mvp": [
+        "Record stories pinned to map points",
+        "GPS-triggered playback during the walk",
+        "Pay-per-walk checkout",
+        "Creator dashboard with earnings"
+      ],
+      "firstUsers": "Record the first three walks yourself in the old part of your city and sell them through local hostels.",
+      "difficulty": 2,
+      "tags": [
+        "Travel",
+        "Creators"
+      ]
+    },
+    {
+      "id": "trip-deposit",
+      "title": "Trip deposits that make friends actually commit",
+      "pitch": "The group trip becomes real when everyone puts in a small deposit; whoever drops out funds the group's first dinner.",
+      "problem": "Group trips die in the chat because 'I'm in' costs nothing to say.",
+      "whoPays": "Friend groups; the organizer pays a small fee.",
+      "pricing": "$2 per trip, or 2% of deposits.",
+      "mvp": [
+        "Trip page with dates, budget and deposit amount",
+        "Deposits held by a payment provider until the trip",
+        "Rules everyone accepts upfront",
+        "Refunds or 'first dinner' payout"
+      ],
+      "firstUsers": "Use it for your own friends' next trip and share the page; every trip invites five to ten new people.",
+      "difficulty": 2,
+      "tags": [
+        "Social",
+        "Payments"
+      ]
+    },
+    {
+      "id": "kids-size-swap",
+      "title": "A size-swap box for kids' clothes",
+      "pitch": "Send back what your kid has outgrown and get a box in the next size up from other families.",
+      "problem": "Kids outgrow clothes in months, so parents keep buying new ones while perfectly good ones sit in cupboards.",
+      "whoPays": "Parents of kids under eight.",
+      "pricing": "$12 per box plus shipping.",
+      "mvp": [
+        "Sign-up with the kid's size and style",
+        "Return label for outgrown clothes",
+        "Quality-check and sorting checklist",
+        "Next-size box shipping"
+      ],
+      "firstUsers": "Run it by hand for 15 families from your local parents' group before building anything.",
+      "difficulty": 2,
+      "tags": [
+        "Parents",
+        "Circular"
+      ]
+    },
+    {
+      "id": "blind-cv-screening",
+      "title": "Blind CV screening for small companies",
+      "pitch": "Upload applications and get them back with names, photos, colleges and ages removed, so the first round is about skills.",
+      "problem": "Small companies unintentionally filter by college name and photo, and miss great people from unknown places.",
+      "whoPays": "Startups and small companies hiring a few people a year.",
+      "pricing": "$29 per job opening.",
+      "mvp": [
+        "Bulk CV upload",
+        "Automatic removal of identifying details",
+        "Side-by-side scoring rubric",
+        "Names revealed only after shortlisting"
+      ],
+      "firstUsers": "Offer it free to five startups that talk publicly about fair hiring.",
+      "difficulty": 2,
+      "tags": [
+        "Hiring",
+        "AI"
+      ]
+    },
+    {
+      "id": "proof-of-work-reports",
+      "title": "Before-and-after photo reports for cleaners and repair pros",
+      "pitch": "Cleaners, plumbers and painters send a neat photo report after each job, so landlords and clients see exactly what was done.",
+      "problem": "Property managers pay for work they never see, and good tradespeople can't prove they're good.",
+      "whoPays": "Service pros pay for pro reports; property managers pay for the dashboard.",
+      "pricing": "Free for five jobs a month; $9 per month after.",
+      "mvp": [
+        "Job checklist with required photos",
+        "Auto-generated report with timestamps",
+        "Client share link",
+        "Public profile of past jobs"
+      ],
+      "firstUsers": "Sign up five cleaners who work for short-stay rental hosts; the hosts will ask everyone else to join.",
+      "difficulty": 1,
+      "tags": [
+        "Services",
+        "B2B"
       ]
     }
   ]
