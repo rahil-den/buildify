@@ -3,8 +3,10 @@ name: Deploy site
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
-  workflow_call: # the daily and submission workflows call this after they commit
+  workflow_call: # daily-ideas and add-approved-idea call this after committing updates
 
 permissions:
   contents: read
@@ -16,29 +18,51 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
+    name: Validate and Build
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          ref: main # always publish the newest commit, including one pushed seconds ago
-      - uses: actions/setup-node@v4
+          ref: ${{ github.ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Check the data files
+
+      - name: Check data files
         run: node scripts/validate.mjs
-      - name: Collect the site files
+
+      - name: Collect site files
         run: |
           mkdir -p _site
           cp *.html _site/
           cp -r assets data _site/
           node scripts/embed-data.mjs _site
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+
+      - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+        with:
+          static_site_url: 'https://rahil-den.github.io/buildify/'
+
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-      - id: deployment
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: https://rahil-den.github.io/buildify/
+    steps:
+      - name: Deploy Pages
+        id: deployment
         uses: actions/deploy-pages@v4
